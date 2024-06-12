@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <title>👩‍💻 My Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu-container">
+        <ul class="horizontal-menu">
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-circle-user" style="color: #363232"></i
+            ></a>
+          </li>
+        </ul>
+        <ul class="horizontal-menu">
+          <li><a href="#skills" class="container">Skills</a></li>
+          <li><a href="#about-me" class="container">About me</a></li>
+          <li><a href="#projects" class="container">Projects</a></li>
+        </ul>
+        <ul class="horizontal-menu">
+          <li>
+            <a href="https://wa.me/48991779743?text=Hi%20" target="_blank"
+              ><i
+                class="fa-brands menu-icon fa-whatsapp"
+                style="color: #363232"
+              ></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="personal">
+        <h1 class="title">
+          Hey there,
+          <div class="name">I'm Julia</div>
+          <div class="resume">
+            <br />
+            A <span class="highlight"> web developer</span> crafting practical,
+            efficient, and elegant solutions.
+          </div>
+        </h1>
+
+        <div class="social">
+          <a href="https://www.linkedin.com/in/juliabacchi/" target="_blank">
+            <i
+              class="fa-brands menu-icon fa-linkedin"
+              style="color: #363232"
+            ></i
+          ></a>
+          <a href="https://www.instagram.com/julia.bacchi" target="_blank">
+            <i
+              class="fa-brands menu-icon fa-square-instagram"
+              style="color: #363232"
+            ></i
+          ></a>
+          <a href="https://github.com/juliabacchi1" target="_blank">
+            <i
+              class="fa-brands menu-icon fa-square-github"
+              style="color: #363232"
+            ></i></a
+          ><br /><br />
+          <div>juliabacchi92@gmail.com</div>
+          <br />
+          <div>Garopaba - Santa Catarina</div>
+          <div>Brazil 🇧🇷</div>
+        </div>
+
+        <!-- <div class="photo">
+          <img
+            src="/Users/juliabacchi/Documents/Personal Project/PORTFOLIO/imgs/julia.png"
+            alt="Julia Bacchi"
+            width="400"
+          />
+        </div> -->
+        <div id="logo"></div>
+
+        <div class="my-goal">
+          <div class="title-goal">MY GOAL</div>
+          <div class="subtitle-about">Elevating digital experiences</div>
+          <div class="text-about">
+            I specialize in crafting seamless, visually appealing interfaces
+            that captive users and elevate digital experiences. My goal is to
+            master the art of frontend development, and constantly improve my
+            skills to bring ideas to life.
+          </div>
+
+          <a href="#" class="download">
+            <span>Download CV</span>
+            <svg width="13px" height="10px" viewBox="0 0 13 10">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <button id="back-to-top" class="back-to-top" title="Go to top">⬆️</button>
+    </header>
+
+    <section id="skills" class="container section">
+      <div class="section-content-skills">
+        <h2 class="section-title">SKILLS AND CERTIFICATIONS</h2>
+
+        <div class="user-profile">
+          <div class="user-wrap">
+            <div class="user-row">
+              <div class="user-row-description">
+                <div class="user-avatar">
+                  <img class="avatar" src="imgs/girl.png" alt="avatar" />
+                </div>
+
+                <div class="achievements">
+                  <h2 class="title-achievements">🎖️ Achievements</h2>
+                  <div class="medals">
+                    <div class="medal medal-1">
+                      <img
+                        class="img-medal"
+                        src="imgs/badge-logo-basic.png"
+                        alt="basic"
+                      />
+                    </div>
+                    <div class="medal medal-2">
+                      <img
+                        class="img-medal"
+                        src="imgs/badge-logo-basic-addon.png"
+                        alt="basic-add-on"
+                      />
+                    </div>
+                    <div class="medal medal-3">
+                      <img
+                        class="img-medal"
+                        src="imgs/badge-logo-plus.png"
+                        alt="plus"
+                      />
+                    </div>
+                    <div class="medal medal-4">
+                      <img
+                        class="img-medal"
+                        src="imgs/badge-logo-plus-Addon.png"
+                        alt="plus-add-on"
+                      />
+                    </div>
+                    <div class="medal medal-5">
+                      <img
+                        class="img-medal"
+                        src="imgs/badge-logo-plus-AI-Addon.png"
+                        alt="ai-add-on"
+                      />
+                    </div>
+                    <div class="medal medal-6">
+                      <img
+                        class="img-medal"
+                        src="imgs/badge-logo-python-basics.png"
+                        alt="phyton-basics"
+                      />
+                    </div>
+                    <div class="medal medal-7">
+                      <img
+                        class="img-medal"
+                        src="imgs/badge-logo-python-advanced.png"
+                        alt="phyton-advanced"
+                      />
+                    </div>
+                    <div class="medal medal-8">
+                      <img
+                        class="img-medal"
+                        src="imgs/badge-logo-responsive.png"
+                        alt="responsive"
+                      />
+                    </div>
+                    <div class="medal medal-9">
+                      <img
+                        class="img-medal"
+                        src="imgs/badge-logo-responsive-addon.png"
+                        alt="responsive-add-on"
+                      />
+                    </div>
+                    <div class="medal medal-10">
+                      <img
+                        class="img-medal"
+                        src="imgs/badge-logo-react.png"
+                        alt="react"
+                      />
+                    </div>
+                    <div class="medal medal-11">
+                      <img
+                        class="img-medal"
+                        src="imgs/badge-logo-react-addon.png"
+                        alt="react-add-on"
+                      />
+                    </div>
+                    <div class="medal medal-12">
+                      <img
+                        class="img-medal"
+                        src="imgs/badge-logo-next.png"
+                        alt="next"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="bagdets">
+                  <h2 class="title-badges">👩‍💻 Skills</h2>
+                  <div class="my-badgets">
+                    <div class="badgets-unit">
+                      <img
+                        class="badget-img"
+                        src="imgs/icon-html.png"
+                        alt="html"
+                      />
+                      <small class="small-badget">HTML</small>
+                    </div>
+                    <div class="badgets-unit">
+                      <img
+                        class="badget-img"
+                        src="imgs/icon-css.png"
+                        alt="css"
+                      />
+                      <small class="small-badget">CSS</small>
+                    </div>
+                    <div class="badgets-unit">
+                      <img class="badget-img" src="imgs/icon-js.png" alt="js" />
+                      <small class="small-badget">JavaScript</small>
+                    </div>
+                    <div class="badgets-unit">
+                      <img
+                        class="badget-img"
+                        src="imgs/editor.png"
+                        alt="vs code"
+                      />
+                      <small class="small-badget">VsCode</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="user-col">
+              <div class="user-header">
+                <h1 class="name-header">Júlia Bacchi 🇧🇷</h1>
+                <p class="description-header">
+                  <strong class="text-header">Graduated</strong> from SheCodes
+                  Basics, SheCodes Basics Add-on, SheCodes Plus,
+                  <span class="not-yet"
+                    >SheCodes Plus Add-On, SheCodes AI Add-On, SheCodes Phyton
+                    Basics, SheCodes Phyton Advanced, SheCodes Responsive,
+                    SheCodes Responsive Add-On, SheCodes React, SheCodes React
+                    Add-On, and SheCodes Next</span
+                  >
+                </p>
+              </div>
+
+              <h1 class="name-header">🎓 Certifications</h1>
+              <div class="user-certifications">
+                <div class="all-cert certification1">
+                  <h3 class="title-cert">Introduction to Coding</h3>
+                  <img
+                    class="img-certification"
+                    src="imgs/Certificate Basics.png"
+                    alt="basics"
+                  />
+                </div>
+                <div class="all-cert certification2">
+                  <h3 class="title-cert">Introduction to Web Development</h3>
+                  <img
+                    class="img-certification"
+                    src="imgs/Certificate Add-on.png"
+                    alt="basics-add-on"
+                  />
+                </div>
+                <div class="all-cert certification2">
+                  <h3 class="title-cert">Web Development</h3>
+                  <img
+                    class="img-certification"
+                    src="imgs/Certificate Plus.png"
+                    alt="plus"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-me" class="container section">
+      <div class="section-content-about">
+        <h2 class="section-title">ABOUT ME</h2>
+
+        <div class="wrapper-about">
+          <div class="description-about">
+            <div class="main-about">
+              <div class="information-about">
+                <div class="info-hi">Olá! 👋</div>
+                <p>
+                  I am originally from Gramado, a city located in the mountains
+                  in southern Brazil, in the state of Rio Grande do Sul. For
+                  several years I've been living my best life in Garopaba, where
+                  I can enjoy the beach, go hiking and do outdoor activities, as
+                  well as spend time with my dogs and cat. <br />My favorite
+                  hobbies include watching series and movies, and also
+                  practicing Ashtanga Yoga for my mind and well-being. <br />I
+                  have been curious since I was a child and fascinated by
+                  creating. With a background in team organization and
+                  management in hospitality and tourism, I transitioned to
+                  programming to align my career with my passions
+                  <strong class="text-header">in a awesome way!</strong>
+                </p>
+              </div>
+              <div class="icons-list">
+                <ul class="personal-icon-gen">
+                  <li class="personal-icon">
+                    <img
+                      class="mean-icon"
+                      src="imgs/icons8-yoga-96.png"
+                      alt="yoga"
+                    />
+                  </li>
+                  <li class="personal-icon">
+                    <img
+                      class="mean-icon"
+                      src="imgs/icons8-pet-96.png"
+                      alt="cat"
+                    />
+                  </li>
+                  <li class="personal-icon">
+                    <img
+                      class="mean-icon"
+                      src="imgs/icons8-pet-96-2.png"
+                      alt="dog"
+                    />
+                  </li>
+                  <li class="personal-icon">
+                    <img
+                      class="mean-icon"
+                      src="imgs/icons8-trekking-96.png"
+                      alt="trek"
+                    />
+                  </li>
+                  <li class="personal-icon">
+                    <img
+                      class="mean-icon"
+                      src="imgs/icons8-beach-96.png"
+                      alt="beach"
+                    />
+                  </li>
+                  <li class="personal-icon">
+                    <img
+                      class="mean-icon"
+                      src="imgs/icons8-study-96.png"
+                      alt="study"
+                    />
+                  </li>
+                  <li class="personal-icon">
+                    <img
+                      class="mean-icon"
+                      src="imgs/icons8-movies-96.png"
+                      alt="movies"
+                    />
+                  </li>
+                </ul>
+              </div>
+              <h1 class="my-info">📖 What I'm looking for</h1>
+              <div class="information-about">
+                <p class="text-myinfo">
+                  A remote job as a front end developer to expand my skills and
+                  be able to contribute to creating incredible things and
+                  solutions.
+                </p>
+              </div>
+            </div>
+
+            <div class="main-img-about">
+              <div class="gallery">
+                <input type="checkbox" />
+                <img src="imgs/sand.jpg" alt="sand" />
+                <img src="imgs/plane1.jpg" alt="plane" />
+                <img src="imgs/nose.jpg" alt="nose" />
+                <img src="imgs/window.jpg" alt="window" />
+                <img src="imgs/tree.jpg" alt="tree" />
+                <img src="imgs/book.jpg" alt="book" />
+                <img src="imgs/caramell.jpg" alt="caramell" />
+                <img src="imgs/coffee1.jpg" alt="coffee" />
+                <img src="imgs/blanket.jpg" alt="blanket" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="container section">
+      <div class="section-content">
+        <h2 class="section-title">PROJECTS</h2>
+        <p class="section-description">
+          Check out some of the projects I have worked on.
+        </p>
+      </div>
+      <div class="weather-app">
+        <p class="title-project">
+          My weather project is open-sourced on
+          <a
+            href="https://github.com/juliabacchi1/my-awesome-app"
+            target="_blank"
+          >
+            GitHub</a
+          >
+          and hosted ond
+          <a href="https://app.netlify.com/" target="_blank">Netlify</a>
+        </p>
+      </div>
+    </section>
+    <script src="src/style.js"></script>
+  </body>
+</html>
