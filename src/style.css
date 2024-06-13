@@ -255,24 +255,16 @@ a {
 
 /* skills */
 
-.skills-me {
-  display: flex;
-  flex-wrap: wrap; /* Permite quebrar linha se necessário */
-  justify-content: space-between; /* Espaçamento igual entre os itens */
-  gap: 20px; /* Espaçamento entre os itens */
-  padding: 20px; /* Espaçamento interno ao redor dos itens */
+/* projects */
+
+.projects {
+  margin: 30px 30px;
+  padding-top: 40px;
 }
 
-.svg-container {
-  display: flex;
-  flex: 0 1 100px; /* Flex item não crescerá além de 100px */
-  max-width: 100px; /* Tamanho máximo do contêiner */
-  height: auto;
-}
-
-.svg-container svg {
-  width: 100%; /* O SVG ocupará 100% do contêiner pai */
-  height: auto;
+.project-image {
+  width: 100px;
+  /* altura será ajustada automaticamente para manter a proporção */
 }
 
 /*ABOUT ME*/
