@@ -200,16 +200,21 @@ button:hover:after {
 /*skills*/
 
 .graduation,
-.certification {
+.certification,
+.skill {
   margin: 30px 30px;
 }
 
+.graduation {
+  padding-top: 40px;
+}
+
 .graduation-me {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .graduation-types {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
 }
 
@@ -219,44 +224,55 @@ a {
   font-weight: 400;
 }
 
-.user-certifications {
-  border: 1px solid rgba(39, 33, 66, 0.1);
-  border-radius: 10px;
+.certificates-container {
   display: flex;
-  justify-content: start;
-  margin: 30px;
-  padding: 20px;
+  justify-content: space-evenly; /* Distribui os certificados igualmente */
+  align-items: center; /* Centraliza verticalmente os itens */
+  margin-top: 30px; /* Espaço acima dos certificados */
 }
 
-h3.title-cert {
-  font-size: 12px;
-  text-align: center;
+.certificate {
+  text-align: center; /* Centraliza o conteúdo dentro do bloco */
+  margin-bottom: 20px; /* Espaço entre os certificados */
 }
 
-.all-cert {
-  width: 200px;
-  flex: 0 0 auto;
-  padding: 20px;
+.certificate img {
+  max-width: 100%; /* Imagens ocupam no máximo a largura do container */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 8px; /* Borda arredondada para efeito visual */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para efeito de elevação */
+  max-height: 150px; /* Altura máxima das imagens (ajuste conforme necessário) */
 }
 
-img.img-certification {
-  max-width: 100%;
-  border: 0.5px solid #657786;
-  border-radius: 5px;
+.certificate a {
+  text-decoration: none; /* Remove sublinhado do link */
+  color: #333; /* Cor do texto do link */
 }
 
-strong.text-header {
-  color: #f65282;
-  font-weight: 700;
+.certificate a:hover {
+  opacity: 0.8; /* Opacidade reduzida ao passar o mouse para indicar interatividade */
 }
 
-.not-yet {
-  color: #9c9b9b;
+/* skills */
+
+.skills-me {
+  display: flex;
+  flex-wrap: wrap; /* Permite quebrar linha se necessário */
+  justify-content: space-between; /* Espaçamento igual entre os itens */
+  gap: 20px; /* Espaçamento entre os itens */
+  padding: 20px; /* Espaçamento interno ao redor dos itens */
 }
 
-p.description-header {
-  font-size: 15px;
-  margin-left: 10px;
+.svg-container {
+  display: flex;
+  flex: 0 1 100px; /* Flex item não crescerá além de 100px */
+  max-width: 100px; /* Tamanho máximo do contêiner */
+  height: auto;
+}
+
+.svg-container svg {
+  width: 100%; /* O SVG ocupará 100% do contêiner pai */
+  height: auto;
 }
 
 /*ABOUT ME*/
