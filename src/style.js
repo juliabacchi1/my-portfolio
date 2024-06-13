@@ -42,27 +42,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //menu inicial
 
-document.addEventListener("DOMContentLoaded", function () {
-  const tabs = document.querySelectorAll(".tab");
-  const line = document.querySelector(".line");
-  let selectedTab = tabs[0];
-
-  function selectTab(tab) {
-    selectedTab.classList.remove("selected");
-    tab.classList.add("selected");
-    selectedTab = tab;
-
-    const tabOffsetLeft = tab.offsetLeft;
-    const tabWidth = tab.offsetWidth;
-
-    line.style.width = `${tabWidth}px`;
-    line.style.transform = `translateX(${tabOffsetLeft}px)`;
-  }
-
-  tabs.forEach((tab) => {
-    tab.addEventListener("click", () => selectTab(tab));
-  });
-
-  // Initialize with the first tab selected
-  selectTab(selectedTab);
-});

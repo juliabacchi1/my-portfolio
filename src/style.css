@@ -1,7 +1,7 @@
 /*general*/
 
 :root {
-  --primary-color: #363232;
+  --primary-color: #010101;
   --secondary-color: #f65282;
   --background-color: #f9f7fe;
   --highlight-color: #ffd0ae;
@@ -14,10 +14,9 @@ body {
   padding: 0;
   font-family: var(--font-family);
   color: var(--primary-color);
+  background-color: var(--background-color);
 }
 header {
-  background-color: #f9f7fe;
-  color: #010101;
   padding: 20px;
   text-align: center;
   min-height: 100vh;
@@ -56,26 +55,24 @@ section {
   text-align: start;
 }
 
-/*horizontal menu*/
+/* horizontal menu */
 
-/* .menu-container {
+.menu-container {
   display: flex;
-  align-items: center;
+  position: fixed;
+  width: 100%; /* Ocupa toda a largura disponível */
+  text-align: center; /* Centraliza os itens horizontalmente */
 }
+
 .horizontal-menu {
   list-style-type: none;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 0;
+  font-size: 13px;
   display: flex;
   gap: 35px;
+  margin: 0 auto;
+  padding: 0;
 }
-.horizontal-menu li {
-  margin-left: 10px;
-}
-.horizontal-menu li:first-child {
-  margin-left: 0;
-}
+
 .horizontal-menu li a {
   display: block;
   padding: 10px 20px;
@@ -85,61 +82,15 @@ section {
 }
 .horizontal-menu li a:hover::before {
   content: "(";
+  color: var(--highlight-color);
   position: absolute;
   left: 5px;
 }
 .horizontal-menu li a:hover::after {
   content: ")";
+  color: var(--highlight-color);
   position: absolute;
   right: 5px;
-}
-
-#skills {
-  background-color: #ffffff;
-}
-#about-me {
-  background-color: #ffffff;
-}
-#projects {
-  background-color: #ffffff;
-} */
-
-.tabs-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 16px;
-  position: relative;
-  justify-content: center;
-}
-
-.tab {
-  padding: 8px 16px;
-  margin: 0 8px;
-  border: none;
-  background: none;
-  cursor: pointer;
-  color: #010101;
-  font-size: 16px;
-  position: relative;
-  z-index: 1;
-}
-
-.tab:hover {
-  color: #333;
-}
-
-.tab.selected {
-  color: rgb(255, 0, 191);
-}
-
-.line {
-  position: absolute;
-  bottom: 0;
-  height: 3px;
-  background: rgb(255, 0, 191);
-  transition: transform 0.4s, width 0.4s;
-  width: 0;
 }
 
 /*my info*/
@@ -158,9 +109,8 @@ section {
   font-size: 60px;
 }
 .resume {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
-  color: var(--primary-color);
 }
 
 /*social*/
@@ -206,7 +156,7 @@ section {
   color: #ff5722;
 }
 
-/*contact*/
+/*download cv button*/
 
 .contact-me {
   display: flex;
@@ -218,155 +168,55 @@ button {
   padding: 14px 16px;
   border: none;
   font-size: 11px;
-  margin: 50px auto;
+  margin: 60px auto;
   border-radius: 60px;
   box-shadow: 0 30px 50px rgba(55, 50, 68, 0.08);
   color: white;
   cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 
-/* Estilos para o botão "voltar ao topo" */
-
-.back-to-top {
-  display: none; /* Inicialmente escondido */
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 100; /* Certifique-se de que ele fica acima de outros elementos */
-  background-color: var(--primary-color);
-  color: white;
-  border: none;
-  border-radius: 50%;
-  padding: 15px;
-  font-size: 18px;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: opacity 0.3s, transform 0.3s;
-}
-
-.back-to-top:hover {
-  background-color: var(--hover-color); /* Cor ao passar o mouse */
-}
-
-/* Animação de desvanecimento */
-.back-to-top.show {
-  display: block;
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.back-to-top.hide {
+button:after {
+  content: "»";
+  position: absolute;
   opacity: 0;
-  transform: translateY(20px);
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover {
+  padding-right: 24px;
+  padding-left: 8px;
+}
+
+button:hover:after {
+  opacity: 1;
+  right: 10px;
 }
 
 /*skills*/
 
-.user-profile {
-  display: block;
-  margin: 45px auto;
-  justify-content: space-around;
+.graduation,
+.certification {
+  margin: 30px 30px;
 }
 
-.user-wrap {
-  display: flex;
+.graduation-me {
+  font-size: 20px;
 }
 
-.user-row {
-  display: flex;
-  justify-content: center;
-  flex: 0 0 auto;
-  width: 25%;
-  margin-left: 40px;
-  margin-bottom: 25px;
+.graduation-types {
+  font-size: 16px;
+  font-weight: 300;
 }
 
-.user-avatar {
-  margin: 0 auto;
-  display: block;
-  padding-left: 35px;
-}
-
-.avatar {
-  border-radius: 10px;
-  width: 200px;
-}
-
-img.avatar {
-  max-width: 100%;
-  display: block;
-}
-
-h2.title-achievements,
-h2.title-badges {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  padding-bottom: 16px;
-  padding-top: 10px;
-}
-
-.medals {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-evenly;
-  max-width: 70%;
-}
-
-.medal {
-  width: 57px;
-  flex: 0 0 auto;
-}
-
-img.img-medal {
-  max-width: 100%;
-}
-
-.my-badgets {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-  max-width: 70%;
-}
-
-.badgets-unit {
-  width: 40px;
-  flex: 0 0 auto;
-}
-
-.badget-img {
-  max-width: 100%;
-}
-
-.small-badget {
-  font-size: 9px;
-  text-align: center;
-  display: block;
-  margin: 0 auto;
-}
-
-.user-col {
-  flex: 0 0 auto;
-  width: 70%;
-}
-
-.user-header {
-  border: 1px solid rgba(39, 33, 66, 0.1);
-  border-radius: 10px;
-  margin-bottom: 30px;
-  padding: 18px;
-}
-
-h1.name-header {
-  line-height: 1.2;
-  margin: 10px;
-}
-
-h3.title-cert {
-  font-size: 12px;
-  text-align: center;
+a {
+  color: #e1306c;
+  text-decoration: none;
+  font-weight: 400;
 }
 
 .user-certifications {
@@ -374,8 +224,13 @@ h3.title-cert {
   border-radius: 10px;
   display: flex;
   justify-content: start;
-  margin-bottom: 30px;
+  margin: 30px;
   padding: 20px;
+}
+
+h3.title-cert {
+  font-size: 12px;
+  text-align: center;
 }
 
 .all-cert {
