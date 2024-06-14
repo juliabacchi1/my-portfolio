@@ -34,7 +34,6 @@ section {
   margin: auto;
   padding: 20px;
   text-align: center;
-  max-width: 700px;
 }
 .section-title {
   font-size: 18px;
@@ -210,7 +209,8 @@ button:hover:after {
 }
 
 .graduation-me {
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .graduation-types {
@@ -245,7 +245,7 @@ a {
 }
 
 .certificate a {
-  text-decoration: none; /* Remove sublinhado do link */
+  text-decoration: none;
   color: #333; /* Cor do texto do link */
 }
 
@@ -253,187 +253,97 @@ a {
   opacity: 0.8; /* Opacidade reduzida ao passar o mouse para indicar interatividade */
 }
 
-/* skills */
-
 /* projects */
 
-.projects {
-  margin: 30px 30px;
+.section-content {
+  margin-top: 60px;
+}
+
+.my-projects {
   padding-top: 40px;
+  margin: 30px 30px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.container-projects {
+  margin: 30px;
+  padding: 40px 40px;
+}
+
+.project-cards {
+  display: flex;
+  justify-content: center; /* Centraliza os cards horizontalmente */
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Espaço igual entre os elementos */
+  padding: 20px;
+  background: #ffffff;
+  border: 1.7px solid #dadada;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 20px;
+  width: 150px; /* Tamanho fixo para os cards */
+  height: 200px; /* Tamanho fixo para os cards */
+}
+
+.project-image-general {
+  max-width: 100%; /* Garante que a imagem não estique além do seu tamanho original */
+  max-height: 100%; /* Garante que a imagem não estique além do seu tamanho original */
+  object-fit: contain; /* Mantém a proporção da imagem */
+}
+
+.project-image-2-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Garante que o contêiner ocupe toda a altura do .cards */
+}
+
+.project-image-2 {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+h2.title-card {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 10px; /* Espaço entre a imagem e o título */
 }
 
 .project-image {
-  width: 100px;
-  /* altura será ajustada automaticamente para manter a proporção */
+  animation: spin 60s linear infinite;
 }
 
-/*ABOUT ME*/
-
-.wrapper-about {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 35px auto;
-  justify-content: space-around;
+@keyframes spin {
+  from {
+    transform: rotate(0deg); /* Início da animação: sem rotação */
+  }
+  to {
+    transform: rotate(
+      360deg
+    ); /* Fim da animação: rotação completa de 360 graus */
+  }
 }
 
-.description-about {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+.project-image-2 {
+  animation: swing 5s ease-in-out infinite;
 }
 
-.main-about {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  width: 46%;
+@keyframes swing {
+  0%,
+  100% {
+    transform: rotate(0deg); /* Estado inicial e final: sem rotação */
+  }
+  50% {
+    transform: rotate(10deg); /* Meio da animação: rotação de 10 graus */
+  }
 }
 
-.information-about {
-  font-size: 15px;
-  border: 1px solid rgba(39, 33, 66, 0.1);
-  border-radius: 10px;
-  padding: 18px;
-  text-align: justify;
-  letter-spacing: normal;
-  margin-bottom: 10px;
-}
-
-h1.my-info {
-  line-height: 1.2;
-  padding: 10px;
-  margin: 10px 0;
-  text-align: initial;
-}
-
-p.text-myinfo {
-  margin: 0;
-  line-height: 1.6;
-}
-
-.info-hi {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-/*ABOUT ME - ICONS*/
-
-.icons-list {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 10px;
-}
-
-.personal-icon-gen {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-li.personal-icon {
-  padding-inline: 23px;
-}
-
-.mean-icon {
-  width: 35px;
-  border: 1px solid rgba(39, 33, 66, 0.1);
-  border-radius: 50%;
-  font-size: 18px;
-  background: #ffffff;
-  color: var(--secondary-color);
-  padding: 5px;
-  transition: transform 0.8s;
-}
-
-img.mean-icon:hover {
-  transform: rotateY(360deg);
-}
-
-/* ABOUT ME - gallery*/
-
-.gallery {
-  --s: 130px; /* control the size of the images*/
-
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  gap: 5px;
-  position: relative;
-}
-.gallery input {
-  position: absolute;
-  border: 2px solid #000;
-  border-radius: 50%;
-  inset: calc(50% - var(--s) / 3);
-  cursor: pointer;
-  --g: linear-gradient(#000 0 0) no-repeat;
-  background: var(--g) 50% / var(--b, 0%) 3px, var(--g) 50%/3px var(--b, 0%);
-  transition: 1.5s;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-.gallery > img {
-  width: var(--s);
-  aspect-ratio: 1;
-  object-fit: cover;
-  transform: scale(0.1);
-  filter: brightness(0);
-  pointer-events: none;
-  transform-origin: var(--x) var(--y);
-  transition: 1s calc((var(--i) - 1) * 0.1s);
-}
-.gallery > img:nth-of-type(1) {
-  --i: 1;
-  --x: 150%;
-  --y: 150%;
-}
-.gallery > img:nth-of-type(2) {
-  --i: 2;
-  --x: 50%;
-  --y: 150%;
-}
-.gallery > img:nth-of-type(3) {
-  --i: 3;
-  --x: -50%;
-  --y: 150%;
-}
-.gallery > img:nth-of-type(4) {
-  --i: 4;
-  --x: 150%;
-  --y: 50%;
-}
-.gallery > img:nth-of-type(5) {
-  --i: 5;
-}
-.gallery > img:nth-of-type(6) {
-  --i: 6;
-  --x: -50%;
-  --y: 50%;
-}
-.gallery > img:nth-of-type(7) {
-  --i: 7;
-  --x: 150%;
-  --y: -50%;
-}
-.gallery > img:nth-of-type(8) {
-  --i: 8;
-  --x: 50%;
-  --y: -50%;
-}
-.gallery > img:nth-of-type(9) {
-  --i: 9;
-  --x: -50%;
-  --y: -50%;
-}
-
-.gallery > input:checked ~ img {
-  transform: scale(1);
-  filter: brightness(1);
-  pointer-events: initial;
-}
-.gallery > input:checked {
-  transform: translateY(calc(1.75 * var(--s))) scale(0.5) rotate(45deg);
-  --b: 70%;
-}
+/* hover card */

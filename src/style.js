@@ -40,5 +40,4 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-//menu inicial
-
+//hover card
