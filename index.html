@@ -7,10 +7,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,200;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
@@ -64,25 +68,31 @@
     <section id="skills" class="container section">
       <div class="section-content-skills">
         <div class="graduation">
-          <h1 class="graduation-me">🎓 Graduation</h1>
           <p class="graduation-types">
             Graduated from
-            <a href="https://shecodes.io" target="_blank">SheCodes</a> on
-            SheCodes Basics, SheCodes Basics Add-on and SheCodes Plus.
-            <br />
-            Click
             <a
+              class="shecodes"
               href="https://www.shecodes.io/graduates/124633-julia-bacchi"
               target="_blank"
-              >here</a
+              >@SheCodes</a
             >
-            to see my profile in SheCodes.
+            on Basics: Introduction to Coding, Basics Add-on: Introduction to
+            Web Development and Plus: Web Development.
           </p>
+
+          <div class="competences">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <img src="imgs/icon-js.png" alt="JavaScript" class="js-icon" />
+            <i class="fab fa-git-alt"></i>
+            <img src="imgs/github.png" alt="Github" class="github-icon" />
+            <img src="imgs/icon-api.png" alt="API" class="api-icon" />
+            <img src="imgs/editor.png" alt="VSCode" class="vs-icon" />
+            <img src="imgs/hosting.png" alt="Hosting" class="hosting-icon" />
+          </div>
         </div>
 
         <div class="certification">
-          <h1 class="graduation-me">🎖 Certifications</h1>
-
           <div class="certificates-container">
             <div class="certificate">
               <a
@@ -110,11 +120,6 @@
             </div>
           </div>
         </div>
-
-        <div class="skill">
-          <h1 class="graduation-me">👩‍💻 Competences</h1>
-          <div class="skills-me"></div>
-        </div>
       </div>
     </section>
 
@@ -131,9 +136,20 @@
                   class="project-image project-image-general"
                 />
               </a>
-              <h2 class="title-card">Weather App</h2>
-              <div class="view">Github</div>
-              
+              <h2 id="title-card" class="title-card">Weather App</h2>
+              <div class="card-back">
+                View in
+                <a href="https://github.com/juliabacchi1" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+                <p>
+                  Real-time weather forecast, location search, responsive
+                  interface.
+                </p>
+                <div class="card-techs">
+                  HTML, CSS, JavaScript, Weather Forecast API, Netlify
+                </div>
+              </div>
             </div>
             <div class="cards">
               <a

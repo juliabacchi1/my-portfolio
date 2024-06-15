@@ -12,32 +12,21 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// mostrar/esconder o botão
-const backToTopButton = document.getElementById("back-to-top");
+//alternar a visibilidade do hover card
 
-window.onscroll = function () {
-  if (window.scrollY > 300) {
-    backToTopButton.classList.remove("hide");
-    backToTopButton.classList.add("show");
-  } else {
-    backToTopButton.classList.remove("show");
-    backToTopButton.classList.add("hide");
-  }
-};
-
-backToTopButton.addEventListener("click", () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-});
-
-// GSAP animation
 document.addEventListener("DOMContentLoaded", function () {
-  console.log("JavaScript carregado!");
-  gsap.to("#logo", {
-    rotation: 360,
-    duration: 2,
-    repeat: -1,
-    ease: "linear",
+  const titleCard = document.getElementById("title-card");
+  const card = document.querySelector(".cards");
+
+  titleCard.addEventListener("click", function (event) {
+    event.stopPropagation(); // Evita que o clique propague para o elemento pai
+    card.classList.toggle("show-back");
+  });
+
+  // Captura o clique na área do card para ocultar o card-back
+  card.addEventListener("click", function (event) {
+    if (!event.target.closest(".card-back")) {
+      card.classList.remove("show-back");
+    }
   });
 });
-
-//hover card
