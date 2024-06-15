@@ -288,21 +288,36 @@ a.shecodes {
   margin-top: 60px;
 }
 
-.my-projects {
-  padding-top: 40px;
-  margin: 30px 30px;
-  font-size: 16px;
-  font-weight: 400;
-}
-
 .container-projects {
   margin: 30px;
-  padding: 40px 40px;
+  padding: 60px 40px;
+  display: flex;
 }
 
 .project-cards {
   display: flex;
   justify-content: center; /* Centraliza os cards horizontalmente */
+  margin: 0 auto;
+}
+
+.apresentation-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin: 100px 30px;
+  padding: 20px;
+}
+
+.title-project {
+  font-size: 23px;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.text-project {
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .cards {
