@@ -162,7 +162,7 @@ section {
   margin-top: 60px;
 }
 
-button {
+button.download-cv {
   background: #222222;
   padding: 14px 16px;
   border: none;
@@ -177,7 +177,7 @@ button {
   transition: 0.5s;
 }
 
-button:after {
+button.download-cv:after {
   content: "»";
   position: absolute;
   opacity: 0;
@@ -186,12 +186,12 @@ button:after {
   transition: 0.5s;
 }
 
-button:hover {
+button.download-cv:hover {
   padding-right: 24px;
   padding-left: 8px;
 }
 
-button:hover:after {
+button.download-cv:hover:after {
   opacity: 1;
   right: 10px;
 }
@@ -258,28 +258,8 @@ a.shecodes {
   margin: 40px;
 }
 
-.competences i {
-  font-size: 30px; /* Tamanho dos ícones */
-}
-
 .competences img {
   width: 30px; /* Tamanho dos ícones */
-}
-
-.card-techs i {
-  margin-right: 5px; /* Espaçamento entre o ícone e o texto */
-}
-
-.fa-html5 {
-  color: #e34c26; /* Cor do ícone HTML */
-}
-
-.fa-css3-alt {
-  color: #1572b6; /* Cor do ícone CSS */
-}
-
-.fa-git-alt {
-  color: #f05032; /* Cor do ícone Git */
 }
 
 /* projects */
@@ -294,12 +274,6 @@ a.shecodes {
   display: flex;
 }
 
-.project-cards {
-  display: flex;
-  justify-content: center; /* Centraliza os cards horizontalmente */
-  margin: 0 auto;
-}
-
 .apresentation-projects {
   display: flex;
   flex-direction: column;
@@ -309,62 +283,44 @@ a.shecodes {
   padding: 20px;
 }
 
+.text-project {
+  font-size: 14px;
+  font-weight: 300;
+}
+
 .title-project {
   font-size: 23px;
   font-weight: 400;
   margin-top: 0;
 }
 
-.text-project {
-  font-size: 14px;
-  font-weight: 400;
+.project-cards {
+  display: flex;
+  justify-content: center; /* Centraliza os cards horizontalmente */
+  margin: 0 auto;
+  flex-wrap: wrap; /* Permite que os cards quebrem linha em telas menores */
 }
 
 .cards {
-  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
+  width: 200px;
+  padding: 15px;
   background: #ffffff;
-  border: 1.7px solid #dadada;
+  border: 1.44px solid #dadada;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  margin: 20px;
-  width: 150px;
-  height: 200px;
-  overflow: hidden;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  margin: 30px;
 }
 
 .project-image-general {
-  max-width: 100%; /* Garante que a imagem não estique além do seu tamanho original */
-  max-height: 100%; /* Garante que a imagem não estique além do seu tamanho original */
-  object-fit: contain; /* Mantém a proporção da imagem */
+  width: 70%; /* Garante que a imagem ocupe a largura completa do container */
+  height: 110px; /* Define uma altura fixa para as imagens */
+  object-fit: contain; /* Garante que a imagem cubra o container mantendo a proporção */
+  padding: 10px;
 }
 
-.project-image-2-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%; /* Garante que o contêiner ocupe toda a altura do .cards */
-}
-
-.project-image-2 {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-}
-
-h2.title-card {
-  font-size: 14px;
-  font-weight: 400;
-  text-align: center;
-  margin-top: 10px; /* Espaço entre a imagem e o título */
-  cursor: pointer; /* Adiciona o cursor de ponteiro para indicar que é clicável */
-}
-
-.project-image {
+.project-image1 {
   animation: spin 60s linear infinite;
 }
 
@@ -393,37 +349,81 @@ h2.title-card {
   }
 }
 
-.card-back {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #ffffff;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  padding: 20px;
-  display: none; /* Inicialmente oculto */
-}
-
-.cards.show-back .card-back {
-  display: flex; /* Mostra o card-back quando a classe show-back é adicionada */
+.frame {
+  display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  opacity: 1;
-  transform: scale(1);
-}
-
-.cards.show-back .project-image,
-.cards.show-back .title-card {
-  opacity: 0; /* Oculta a imagem e o título original quando a classe show-back é adicionada */
-}
-
-.card-back p,
-.card-techs {
-  font-size: 14px;
-  color: #333;
   text-align: center;
-  margin: 10px 0;
+}
+
+.title-frame {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.text-frame {
+  opacity: 0.5;
+  font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.card-contain {
+  display: flex;
+  justify-content: center; /* Alinha os ícones ao centro */
+  gap: 5px; /* Adiciona espaçamento entre os ícones */
+  padding: 10px 0;
+  margin-bottom: 13px;
+}
+
+.icon-contain {
+  width: 17px;
+  height: 17px;
+}
+
+.view-web,
+.view-github {
+  color: #f8f8f8;
+  padding: 10px 10px;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+  position: relative;
+  display: inline-block;
+  border-radius: 60px;
+  box-shadow: 0 30px 50px rgba(55, 50, 68, 0.08);
+  border: none;
+  background: #272727;
+  margin: 0 auto;
+}
+
+.view-web:hover,
+.view-github:hover {
+  background: #f8f8f8;
+  color: #272727;
+  box-shadow: 0 30px 50px rgba(55, 50, 68, 0.08);
+}
+
+.custom-icon {
+  font-size: 14px;
+  padding-inline-end: 2px;
+}
+
+.fa-globe {
+  font-size: 14px;
+  padding-inline-end: 2px;
+}
+
+.buttons-view {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+hr {
+  width: 70%; /* Garante que a linha horizontal ocupe toda a largura disponível */
+  align-self: center;
+  margin: 5px 0; /* Define margem superior e inferior para espaçamento */
+  border: none; /* Remove a borda padrão do <hr> */
+  border-top: 1px solid #ccc; /* Adiciona uma linha horizontal com cor cinza */
 }
