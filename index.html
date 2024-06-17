@@ -17,11 +17,19 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,200;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <title>👩‍💻 My Portfolio</title>
   </head>
+
   <body>
+    <!-- HEADER -->
     <header>
       <div class="menu-container" id="home">
         <ul class="horizontal-menu">
@@ -65,22 +73,24 @@
       </div>
     </header>
 
+    <!-- SECTION SKILLS -->
     <section id="skills" class="container section">
       <div class="section-content-skills">
         <div class="graduation">
+          <h1 class="graduation-title">Graduation</h1>
           <p class="graduation-types">
-            Graduated from
+            My career in technology started with
             <a
               class="shecodes"
               href="https://www.shecodes.io/graduates/124633-julia-bacchi"
               target="_blank"
               >@SheCodes</a
-            >
-            on Basics: Introduction to Coding, Basics Add-on: Introduction to
-            Web Development and Plus: Web Development.
+            >, that offers programming courses aimed especially at women.
+            Through hands-on classes and challenging projects, I learned the
+            technical knowledge and the confidence to move forward in the
+            technology sector.
           </p>
-
-          <div class="competences">
+          <!-- <div class="competences">
             <img src="imgs/icon-html.png" alt="Html" class="html-icon" />
             <img src="imgs/icon-css.png" alt="CSS" class="css-icon" />
             <img src="imgs/icon-js.png" alt="JavaScript" class="js-icon" />
@@ -89,7 +99,7 @@
             <img src="imgs/icon-api.png" alt="API" class="api-icon" />
             <img src="imgs/editor.png" alt="VSCode" class="vs-icon" />
             <img src="imgs/hosting.png" alt="Hosting" class="hosting-icon" />
-          </div>
+          </div> -->
         </div>
 
         <div class="certification">
@@ -123,11 +133,12 @@
       </div>
     </section>
 
+    <!-- SECTION PROJECTS -->
     <section id="projects" class="container section">
       <div class="section-content">
         <div class="container-projects">
           <div class="apresentation-projects">
-            <p class="text-project">─ MY PROJECTS ─</p>
+            <p class="text-project">─ PROJECTS ─</p>
             <h1 class="title-project">
               Explore my recent web development work
             </h1>
@@ -142,10 +153,10 @@
                 />
               </a>
               <div class="frame">
-                <div class="title-frame">WEATHER APP</div>
+                <div class="title-frame">Weather App</div>
                 <div class="text-frame">Forecast, responsive interface</div>
               </div>
-              <hr />
+              <hr class="hr-frame" />
               <div class="card-contain">
                 <img src="imgs/icon-html.png" class="icon-contain" />
                 <img src="imgs/icon-css.png" class="icon-contain" />
@@ -183,7 +194,7 @@
                 />
               </a>
               <div class="frame">
-                <div class="title-frame">POTTER WORLD</div>
+                <div class="title-frame">Potter World</div>
                 <div class="text-frame">Search, responsive interface</div>
               </div>
               <hr />
@@ -220,8 +231,31 @@
       </div>
     </section>
 
+    <!-- SECTION ABOUT ME -->
     <section id="about-me" class="container section">
       <div class="section-content-about"></div>
+      <div class="container-about-me">
+        <h1 class="title-about-me">
+          <span class="meet">Meet</span> Júlia Bacchi
+        </h1>
+        <p class="text-about-me">
+          A front-end developer who brings ideas to life, appreciates a good
+          coffee, a healthy lifestyle, and pets.
+        </p>
+      </div>
+      <div class="container-description-me">
+        <div class="details-general">
+          <div class="details-photos">
+            <img src="imgs/profile.png" alt="" class="hobby-photos" />
+          </div>
+          <div class="details-descriptions">
+            <h1 class="title-description">Title</h1>
+            <p class="text-description">Text in here</p>
+            <hr class="hr-about" />
+            <p class="footer-description">Garopaba / SC - BRASIL 🇧🇷</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <script src="src/style.js"></script>

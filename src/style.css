@@ -198,18 +198,23 @@ button.download-cv:hover:after {
 
 /*skills*/
 
-.graduation,
-.certification,
-.skill {
-  margin: 30px 30px;
+.graduation {
+  padding-top: 9px;
+  margin: 30px 70px;
 }
 
-.graduation {
-  padding-top: 40px;
+.certification {
+  margin: 30px 50px;
+}
+
+.graduation-title {
+  font-size: 38px;
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  margin-bottom: 0;
 }
 
 .graduation-types {
-  text-align: center;
   font-size: 15px;
   font-weight: 300;
 }
@@ -224,43 +229,33 @@ a.shecodes {
   display: flex;
   justify-content: space-evenly; /* Distribui os certificados igualmente */
   align-items: center; /* Centraliza verticalmente os itens */
-  margin: 0 300px; /* Espaço entre os certificados */
-}
-
-.certificate {
-  text-align: center; /* Centraliza o conteúdo dentro do bloco */
-  margin-bottom: 20px; /* Espaço entre os certificados */
+  margin: 0 190px; /* Espaço entre os certificados */
 }
 
 .certificate img {
   max-width: 100%; /* Imagens ocupam no máximo a largura do container */
   height: auto; /* Mantém a proporção da imagem */
-  border-radius: 8px; /* Borda arredondada para efeito visual */
+  border-radius: 12px; /* Borda arredondada para efeito visual */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para efeito de elevação */
-  max-height: 150px; /* Altura máxima das imagens (ajuste conforme necessário) */
+  max-height: 190px; /* Altura máxima das imagens (ajuste conforme necessário) */
 }
 
-.certificate a {
-  text-decoration: none;
-  color: #333; /* Cor do texto do link */
-}
-
-.certificate a:hover {
+.certificate img:hover {
   opacity: 0.8; /* Opacidade reduzida ao passar o mouse para indicar interatividade */
 }
 
 /* competences */
 
-.competences {
+/* .competences {
   display: flex;
   justify-content: center;
   gap: 15px; /* Espaço entre os ícones */
-  margin: 40px;
-}
+/* margin: 40px; */
+/* } */
 
-.competences img {
+/* .competences img {
   width: 30px; /* Tamanho dos ícones */
-}
+/* } */
 
 /* projects */
 
@@ -284,12 +279,14 @@ a.shecodes {
 }
 
 .text-project {
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 13px;
+  font-weight: 400;
+  opacity: 0.5;
 }
 
 .title-project {
   font-size: 23px;
+  font-family: "Bree Serif", serif;
   font-weight: 400;
   margin-top: 0;
 }
@@ -305,11 +302,11 @@ a.shecodes {
   display: flex;
   flex-direction: column;
   width: 200px;
-  padding: 15px;
+  padding: 10px;
   background: #ffffff;
-  border: 1.44px solid #dadada;
-  border-radius: 10px;
-  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border: 1.44px solid #f1f1f1;
+  border-radius: 20px;
+  box-shadow: 5px 8px 9px -7px rgba(0, 0, 0, 0.1);
   margin: 30px;
 }
 
@@ -357,8 +354,8 @@ a.shecodes {
 }
 
 .title-frame {
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 500;
   margin-bottom: 5px;
 }
 
@@ -367,6 +364,15 @@ a.shecodes {
   font-weight: 400;
   font-size: 12px;
   margin-bottom: 10px;
+}
+
+hr.hr-frame {
+  width: 70%; /* Garante que a linha horizontal ocupe toda a largura disponível */
+  align-self: center;
+  margin: 5px 0; /* Define margem superior e inferior para espaçamento */
+  border: none; /* Remove a borda padrão do <hr> */
+  border-top: 1px solid #ccc; /* Adiciona uma linha horizontal com cor cinza */
+  opacity: 0.3;
 }
 
 .card-contain {
@@ -384,7 +390,7 @@ a.shecodes {
 
 .view-web,
 .view-github {
-  color: #f8f8f8;
+  color: #272727;
   padding: 10px 10px;
   cursor: pointer;
   transition: opacity 0.3s ease-in-out;
@@ -393,14 +399,14 @@ a.shecodes {
   border-radius: 60px;
   box-shadow: 0 30px 50px rgba(55, 50, 68, 0.08);
   border: none;
-  background: #272727;
+  background: #f7f7f7;
   margin: 0 auto;
 }
 
 .view-web:hover,
 .view-github:hover {
-  background: #f8f8f8;
-  color: #272727;
+  background: #272727;
+  color: #f7f7f7;
   box-shadow: 0 30px 50px rgba(55, 50, 68, 0.08);
 }
 
@@ -420,10 +426,82 @@ a.shecodes {
   gap: 5px;
 }
 
-hr {
+/* about me */
+
+.container-about-me {
+  margin: 30px;
+}
+
+.title-about-me {
+  font-size: 38px;
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+
+span.meet {
+  color: #b36f2c;
+}
+
+.text-about-me {
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* photos and details */
+
+.container-description-me {
+  margin: 30px 60px;
+}
+
+.details-general {
+  display: flex;
+  margin: 0 289px;
+}
+
+.details-photos {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.details-descriptions {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.hobby-photos {
+  max-width: 100%;
+  max-height: 200px;
+  border-radius: 20px;
+  justify-content: end;
+  object-fit: cover;
+}
+
+.title-description {
+  font-size: 28px;
+  font-family: "Bree Serif", serif;
+}
+
+.text-description {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.footer-description {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+hr.hr-about {
   width: 70%; /* Garante que a linha horizontal ocupe toda a largura disponível */
   align-self: center;
   margin: 5px 0; /* Define margem superior e inferior para espaçamento */
   border: none; /* Remove a borda padrão do <hr> */
   border-top: 1px solid #ccc; /* Adiciona uma linha horizontal com cor cinza */
+  opacity: 0.3;
 }
