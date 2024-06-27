@@ -490,7 +490,7 @@ p.flag {
 
   .horizontal-menu {
     flex-direction: column;
-    gap: 7px;
+    gap: 5px;
     font-size: 16px;
   }
 
@@ -510,18 +510,12 @@ p.flag {
     font-size: 14px;
   }
 
-  .graduation {
-    position: static;
-    text-align: center;
-  }
-
   .graduation-title {
     font-size: 18px;
   }
 
   .certificates-container {
     flex-direction: column;
-    max-width: fit-content;
   }
 
   .graduation {
