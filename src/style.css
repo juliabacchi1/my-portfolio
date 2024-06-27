@@ -480,3 +480,120 @@ p.flag {
   padding-bottom: 5px;
   font-weight: 600;
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .menu-container {
+    position: static;
+    text-align: center;
+  }
+
+  .horizontal-menu {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+  }
+
+  .my-info {
+    padding: 100px 20px 10px 20px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .subtitle {
+    font-size: 48px;
+  }
+
+  .resume {
+    font-size: 14px;
+  }
+
+  .certificates-container {
+    flex-direction: column;
+  }
+
+  .graduation {
+    margin: 20px;
+  }
+
+  .project-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cards {
+    width: 100%;
+  }
+
+  .container-about {
+    margin: 20px;
+  }
+
+  .title-about {
+    font-size: 28px;
+  }
+
+  .text-about {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-container {
+    position: static;
+    text-align: center;
+  }
+
+  .horizontal-menu {
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+  }
+
+  .my-info {
+    padding: 80px 15px 10px 15px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 36px;
+  }
+
+  .resume {
+    font-size: 12px;
+  }
+
+  .certificates-container {
+    flex-direction: column;
+  }
+
+  .graduation {
+    margin: 15px;
+  }
+
+  .project-cards {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .cards {
+    width: 100%;
+  }
+
+  .container-about {
+    margin: 15px;
+  }
+
+  .title-about {
+    font-size: 24px;
+  }
+
+  .text-about {
+    font-size: 14px;
+  }
+}
