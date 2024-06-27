@@ -490,7 +490,7 @@ p.flag {
 
   .horizontal-menu {
     flex-direction: column;
-    gap: 5px;
+    gap: 7px;
     font-size: 16px;
   }
 
@@ -521,6 +521,7 @@ p.flag {
 
   .certificates-container {
     flex-direction: column;
+    max-width: fit-content;
   }
 
   .graduation {
