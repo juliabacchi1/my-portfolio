@@ -2,57 +2,32 @@
 
 :root {
   --primary-color: #010101;
-  --secondary-color: #f65282;
   --background-color: #f9f7fe;
   --highlight-color: #ffd0ae;
   --hover-color: #ff6347;
-  --font-family: "Lato", sans-serif;
+  --font-family: "Raleway", sans-serif;
 }
 
 body {
   margin: 0;
-  padding: 0;
   font-family: var(--font-family);
   color: var(--primary-color);
   background-color: var(--background-color);
 }
+
 header {
   padding: 20px;
   text-align: center;
-  min-height: 100vh;
-}
-section {
-  min-height: 100vh;
 }
 
 .highlight {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, #ffd0ae 65%);
 }
+
 .section-content,
-.section-content-about,
-.section-content-skills {
-  margin: auto;
-  padding: 20px;
-  text-align: center;
-}
-.section-title {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  text-align: center;
-  text-shadow: 1px 1px 1.5px #959090;
-}
-.section-description {
-  font-size: 22px;
-  line-height: 1.4em;
-}
+.section-content-skills,
 .section-content-about {
-  max-width: none;
-}
-.section-content-skills {
-  max-width: none;
-  text-align: start;
-  display: flex;
+  padding: 20px;
 }
 
 /* horizontal menu */
@@ -97,9 +72,7 @@ section {
 /*my info*/
 
 .my-info {
-  display: flex;
   flex-direction: column;
-  margin: 0 auto;
   padding: 180px 30px 10px 30px;
 }
 
@@ -108,6 +81,7 @@ section {
 }
 .subtitle {
   font-size: 60px;
+  font-weight: 500;
 }
 .resume {
   font-size: 16px;
@@ -119,18 +93,18 @@ section {
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 15px; /* Espaço entre os ícones */
+  gap: 15px;
   margin-top: 20px;
 }
 
 .social-icons i {
-  font-size: 24px; /* Tamanho dos ícones */
-  color: #000; /* Cor dos ícones */
-  transition: color 0.3s; /* Transição suave para hover */
+  font-size: 24px;
+  color: #000;
+  transition: color 0.3s;
 }
 
 .social-icons i:hover {
-  color: #0077b5; /* Cor do ícone ao passar o mouse */
+  color: #0077b5;
 }
 
 .social-icons i.fa-linkedin:hover {
@@ -160,7 +134,6 @@ section {
 /*download cv button*/
 
 .contact-me {
-  display: flex;
   margin-top: 60px;
 }
 
@@ -201,104 +174,76 @@ button.download-cv:hover:after {
 /*skills*/
 
 .graduation {
-  padding-top: 9px;
-  margin: 70px 60px;
-  width: 100%;
-}
-
-.certification {
-  margin: 70px 60px;
-  padding: 20px;
-}
-
-.graduation-text {
-  font-size: 13px;
-  font-weight: 400;
-  opacity: 0.5;
+  margin: 60px 215px 30px 215px;
+  padding-top: 30px;
+  text-align: initial;
 }
 
 .graduation-title {
   font-size: 38px;
-  font-family: "Bree Serif", serif;
-  font-weight: 400;
+  font-weight: 600;
   margin: 0;
 }
 
 .graduation-types {
-  font-size: 16px;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 a.shecodes {
   text-decoration: none;
   color: var(--primary-color);
-  font-weight: 400;
+  font-weight: 600;
 }
-
-.certificates-container {
-  display: flex;
-  justify-content: space-evenly; /* Distribui os certificados igualmente */
-  align-items: center; /* Centraliza verticalmente os itens */
-  column-gap: 20px;
-}
-
-.certificate img {
-  max-width: 100%; /* Imagens ocupam no máximo a largura do container */
-  border-radius: 12px; /* Borda arredondada para efeito visual */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para efeito de elevação */
-  max-height: 460px; /* Altura máxima das imagens (ajuste conforme necessário) */
-}
-
-.certificate img:hover {
-  opacity: 0.8; /* Opacidade reduzida ao passar o mouse para indicar interatividade */
-}
-
-/* competences */
 
 .competences {
   display: flex;
   justify-content: start;
-  gap: 15px; /* Espaço entre os ícones */
-  padding-top: 5px;
+  gap: 15px;
 }
 
 .competences img {
-  width: 23px; /* Tamanho dos ícones */
+  width: 23px;
+}
+
+.certification {
+  padding: 20px;
+}
+
+.certificates-container {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.certificate img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 230px;
+}
+
+.certificate img:hover {
+  opacity: 0.8;
 }
 
 /* projects */
 
-.section-content {
-  margin-top: 60px;
-}
-
 .container-projects {
-  margin: 30px;
-  padding: 60px 40px;
   display: flex;
+  padding: 130px 152px;
 }
 
 .apresentation-projects {
   display: flex;
   flex-direction: column;
-  align-items: start;
   justify-content: center;
-  padding: 20px;
-}
-
-.text-project {
-  font-size: 13px;
-  font-weight: 400;
-  opacity: 0.5;
+  padding: 20px 50px;
 }
 
 .title-project {
   font-size: 38px;
-  font-family: "Bree Serif", serif;
-  font-weight: 400;
-  margin-top: 0;
-  text-align: start;
-  max-width: 400px;
+  font-weight: 600;
+  text-align: center;
 }
 
 .project-cards {
@@ -438,14 +383,9 @@ hr.hr-frame {
 
 /* about me */
 
-.container-about-me {
-  margin: 30px;
-}
-
 .title-about-me {
   font-size: 38px;
-  font-family: "Bree Serif", serif;
-  font-weight: 400;
+  font-weight: 600;
   text-align: center;
   padding-top: 20px;
   margin: 0 auto;
@@ -456,8 +396,7 @@ span.meet {
 }
 
 .text-about-me {
-  font-size: 16px;
-  font-weight: 300;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -470,6 +409,7 @@ span.meet {
 .details-general {
   display: flex;
   margin: 0 290px;
+  padding-bottom: 80px;
 }
 
 .details-photos {
@@ -533,9 +473,10 @@ p.flag {
 }
 
 .country {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .city {
   padding-bottom: 5px;
+  font-weight: 600;
 }
