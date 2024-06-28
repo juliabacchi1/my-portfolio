@@ -24,8 +24,7 @@ header {
 }
 
 .section-content,
-.section-content-skills,
-.section-content-about {
+.section-content-skills {
   padding: 20px;
 }
 
@@ -365,12 +364,16 @@ button.view-web-2.hovered span:first-of-type {
 
 /* about me */
 
+.container-about-me {
+  margin: 0;
+}
+
 .title-about-me {
   font-size: 38px;
   font-weight: 600;
   text-align: center;
-  padding-top: 20px;
-  margin: 0 auto;
+  padding: 10px 0;
+  margin: 0;
 }
 
 span.meet {
@@ -390,7 +393,6 @@ span.meet {
 
 .details-general {
   display: flex;
-  margin: 0 290px;
   padding-bottom: 80px;
 }
 
@@ -402,19 +404,13 @@ span.meet {
 .details-descriptions {
   display: flex;
   flex-direction: column;
-  padding-top: 28px;
-  padding-right: 24px;
+  padding: 20px 75px 0 0;
 }
 
 .hobby-photos {
   max-height: 260px;
-  border-radius: 20px;
+  border-radius: 55%;
   object-fit: cover;
-}
-
-.title-description {
-  font-size: 20px;
-  margin: 0;
 }
 
 .text-description {
