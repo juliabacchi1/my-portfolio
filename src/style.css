@@ -16,7 +16,6 @@ body {
 }
 
 header {
-  padding: 20px;
   text-align: center;
 }
 
@@ -35,9 +34,11 @@ header {
 .menu-container {
   display: flex;
   position: fixed;
+  padding: 10px;
   width: 100%; /* Ocupa toda a largura disponível */
   text-align: center; /* Centraliza os itens horizontalmente */
   background: var(--background-color);
+  z-index: 1000;
 }
 
 .horizontal-menu {
@@ -150,6 +151,7 @@ button.download-cv {
   display: inline-block;
   position: relative;
   transition: 0.5s;
+  z-index: 900;
 }
 
 button.download-cv:after {
@@ -174,8 +176,13 @@ button.download-cv:hover:after {
 /*skills*/
 
 .graduation {
+  display: flex;
   margin: 60px;
   text-align: initial;
+}
+
+.graduation-description {
+  width: 85%;
 }
 
 .graduation-title {
@@ -194,11 +201,14 @@ a.shecodes {
 .competences {
   display: flex;
   justify-content: start;
-  gap: 15px;
+  gap: 22px;
+  margin: 20px 0;
+  padding-top: 15px;
 }
 
 .competences img {
-  width: 23px;
+  width: 33px;
+  height: 35px;
 }
 
 .certification {
@@ -222,28 +232,6 @@ a.shecodes {
   opacity: 0.8;
 }
 
-/* .certification {
-  padding: 20px;
-}
-
-.certificates-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  column-gap: 20px;
-  row-gap: 20px;
-}
-
-.certificate img {
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 230px;
-}
-
-.certificate img:hover {
-  opacity: 0.8;
-} */
-
 /* projects */
 
 .container-projects {
@@ -266,6 +254,7 @@ a.shecodes {
 .item-image {
   padding: 10px;
   margin: 30px 0;
+  cursor: pointer;
 }
 
 img.item-1 {
@@ -273,6 +262,11 @@ img.item-1 {
   border-radius: 20px;
   box-shadow: 5px 10px 13px -6px rgba(0, 0, 0, 0.1);
   border: 1.44px solid #2222221a;
+  transition: transform 0.3s ease-in-out;
+}
+
+img.item-1:hover {
+  transform: scale(1.05);
 }
 
 .item-description {
@@ -316,6 +310,7 @@ button.view-web {
   transition: background-color 0.3s, padding 0.5s;
   width: 120px;
   height: 40px;
+  z-index: 900;
 }
 
 button.view-web span {
@@ -350,6 +345,7 @@ button.view-web-2 {
   transition: background-color 0.3s, padding 0.5s;
   width: 120px;
   height: 40px;
+  z-index: 900;
 }
 
 button.view-web-2 span {
