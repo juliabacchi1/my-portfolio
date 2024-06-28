@@ -1,4 +1,4 @@
-/*general*/
+/* General */
 
 :root {
   --primary-color: #010101;
@@ -28,14 +28,14 @@ header {
   padding: 20px;
 }
 
-/* horizontal menu */
+/* Horizontal menu */
 
 .menu-container {
   display: flex;
   position: fixed;
   padding: 10px;
-  width: 100%; /* Ocupa toda a largura disponível */
-  text-align: center; /* Centraliza os itens horizontalmente */
+  width: 100%;
+  text-align: center;
   background: var(--background-color);
   z-index: 1000;
 }
@@ -69,7 +69,7 @@ header {
   right: 5px;
 }
 
-/*my info*/
+/* My info */
 
 .my-info {
   flex-direction: column;
@@ -88,7 +88,7 @@ header {
   font-weight: 300;
 }
 
-/*social*/
+/* Social */
 
 .social-icons {
   display: flex;
@@ -131,7 +131,7 @@ header {
   color: #ff5722;
 }
 
-/*download cv button*/
+/* Download cv button */
 
 .contact-me {
   margin-top: 60px;
@@ -172,7 +172,7 @@ button.download-cv:hover:after {
   right: 10px;
 }
 
-/*skills*/
+/* Skills */
 
 .graduation {
   display: flex;
@@ -231,7 +231,7 @@ a.shecodes {
   opacity: 0.8;
 }
 
-/* projects */
+/* Projects */
 
 .container-projects {
   margin: 60px;
@@ -292,7 +292,7 @@ img.item-1:hover {
   font-size: 14px;
 }
 
-/* project 1 button */
+/* Project 1 button */
 
 button.view-web {
   background-color: #ffffff;
@@ -327,7 +327,7 @@ button.view-web.hovered span:first-of-type {
   text-shadow: 0 50px currentColor, 0 -50px currentColor;
 }
 
-/* project 2 button */
+/* Project 2 button */
 
 button.view-web-2 {
   background-color: #ffffff;
@@ -362,7 +362,7 @@ button.view-web-2.hovered span:first-of-type {
   text-shadow: 0 50px currentColor, 0 -50px currentColor;
 }
 
-/* about me */
+/* About me */
 
 .container-about-me {
   margin: 0;
@@ -385,15 +385,13 @@ span.meet {
   text-align: center;
 }
 
-/* photos and details */
-
 .container-description-me {
-  margin: 30px 70px;
+  margin: 50px 70px;
 }
 
 .details-general {
   display: flex;
-  padding-bottom: 80px;
+  padding-bottom: 100px;
 }
 
 .details-photos {
@@ -404,13 +402,12 @@ span.meet {
 .details-descriptions {
   display: flex;
   flex-direction: column;
-  padding: 20px 75px 0 0;
+  padding: 30px 115px 0 0;
 }
 
 .hobby-photos {
-  max-height: 260px;
-  border-radius: 55%;
-  object-fit: cover;
+  max-height: 230px;
+  border-radius: 50%;
 }
 
 .text-description {
@@ -421,11 +418,11 @@ span.meet {
 }
 
 hr.hr-about {
-  width: 100%; /* Garante que a linha horizontal ocupe toda a largura disponível */
+  width: 100%;
   align-self: center;
-  margin: 5px 0; /* Define margem superior e inferior para espaçamento */
-  border: none; /* Remove a borda padrão do <hr> */
-  border-top: 1px solid #ccc; /* Adiciona uma linha horizontal com cor cinza */
+  margin: 5px 0;
+  border: none;
+  border-top: 1px solid #ccc;
   opacity: 0.3;
 }
 

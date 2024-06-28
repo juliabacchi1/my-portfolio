@@ -1,4 +1,4 @@
-// rolagem suave quando um desses links é clicado
+// Rolagem suave entre sections
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -56,7 +56,7 @@ const certificates = [
   },
 ];
 
-// Função para criar elementos de certificado
+// Função para os elementos de certificado
 function createCertificateElement(cert) {
   const certificateDiv = document.createElement("div");
   certificateDiv.classList.add("certificate");
@@ -84,7 +84,7 @@ certificates.forEach((cert) => {
   certificatesContainer.appendChild(certificateElement);
 });
 
-//rolagem do botão Project-1
+// Rolagem do botão Project-1
 
 document.querySelector(".view-web").addEventListener("mouseover", function () {
   this.classList.add("hovered");
@@ -94,7 +94,7 @@ document.querySelector(".view-web").addEventListener("mouseout", function () {
   this.classList.remove("hovered");
 });
 
-//rolagem do botão Project-2
+// Rolagem do botão Project-2
 
 document
   .querySelector(".view-web-2")
