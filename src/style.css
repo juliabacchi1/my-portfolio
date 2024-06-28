@@ -521,13 +521,18 @@ a.button-contact {
     margin: 50px;
   }
 
+  .graduation-title,
+  .project-title .title-about-me {
+    font-size: 30px;
+  }
+
   .competences img {
     width: 23px;
     height: 25px;
   }
 
   .certificate img {
-    width: 100px;
+    width: 90px;
   }
 
   img.item-1 {
