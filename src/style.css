@@ -518,18 +518,7 @@ a.button-contact {
   .graduation,
   .container-projects,
   .container-about-me {
-    margin: 30px;
-  }
-
-  .graduation-title,
-  .project-title,
-  .title-about-me {
-    font-size: 35px;
-  }
-
-  .graduation-types,
-  .text-about-me {
-    font-size: 30px;
+    margin: 50px;
   }
 
   .competences,
@@ -543,7 +532,8 @@ a.button-contact {
   }
 
   .certificate img {
-    width: 120px;
+    width: 110px;
+    margin: 10px;
   }
 
   img.item-1 {
