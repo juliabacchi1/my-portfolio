@@ -511,6 +511,15 @@ a.button-contact {
 }
 
 @media (max-width: 768px) {
+  .graduation-title.gra-ti,
+  .title-about-me.tit-ab,
+  .project-title.pro-ti {
+    font-size: 20px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 768px) {
   .item-1.responsive-image {
     max-height: 200px;
     max-width: 200px;
