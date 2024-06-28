@@ -548,6 +548,15 @@ a.button-contact {
   .certificate img {
     width: 100px;
   }
+
+  .project-items {
+    display: flex;
+    margin: 30px 0;
+  }
+
+  img.item-1 {
+    width: 200px;
+  }
 }
 
 /* Estilos para telas menores que 480px */
