@@ -510,15 +510,11 @@ a.button-contact {
   }
 
   .section-content-skills {
-    padding: 20px;
-  }
-
-  .graduation-description {
-    text-align: center;
+    padding: 5px;
   }
 
   .graduation-title {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 
   .graduation-types {
@@ -530,23 +526,33 @@ a.button-contact {
   }
 
   .media-icon {
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .certificates-container {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 12px;
   }
 }
 
 /* Estilos para telas menores que 480px */
 @media (max-width: 480px) {
   .graduation-title {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .graduation-types {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 
   .media-icon {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .certificates-container {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 8px;
   }
 }
