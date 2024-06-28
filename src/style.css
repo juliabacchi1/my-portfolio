@@ -508,35 +508,45 @@ a.button-contact {
   .horizontal-menu.men-pr {
     gap: 10px;
   }
-}
 
-@media (max-width: 768px) {
-  .graduation-title.gra-ti,
-  .title-about-me.tit-ab,
-  .project-title.pro-ti {
-    font-size: 20px;
-    padding: 5px;
+  .section-content-skills {
+    padding: 20px;
+  }
+
+  .graduation-description {
+    text-align: center;
+  }
+
+  .graduation-title {
+    font-size: 1.5rem;
+  }
+
+  .graduation-types {
+    font-size: 1rem;
+  }
+
+  .competences {
+    flex-wrap: wrap;
+  }
+
+  .media-icon {
+    width: 40px;
+    height: 40px;
   }
 }
 
-@media (max-width: 768px) {
-  .graduation-types.gra-ty,
-  .text-about-me.tex-ab {
-    font-size: 14px;
+/* Estilos para telas menores que 480px */
+@media (max-width: 480px) {
+  .graduation-title {
+    font-size: 1.2rem;
   }
-}
 
-@media (max-width: 768px) {
-  .competences.co-ico {
-    max-height: 8px;
-    max-width: 8px;
-    gap: 10px;
+  .graduation-types {
+    font-size: 0.9rem;
   }
-}
 
-@media (max-width: 768px) {
-  .item-1.responsive-image {
-    max-height: 200px;
-    max-width: 200px;
+  .media-icon {
+    width: 30px;
+    height: 30px;
   }
 }
