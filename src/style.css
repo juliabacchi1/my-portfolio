@@ -514,25 +514,28 @@ a.button-contact {
   }
 
   .graduation-title {
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
 
   .graduation-types {
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
 
   .competences {
-    flex-wrap: wrap;
+    gap: 10px;
   }
 
-  .media-icon {
-    width: 20px;
-    height: 20px;
+  .competences img {
+    width: 23px;
+    height: 25px;
   }
 
   .certificates-container {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 12px;
+    gap: 10px;
+  }
+
+  .certificate img {
+    width: 100px;
   }
 }
 
