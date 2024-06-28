@@ -507,5 +507,6 @@ a.button-contact {
 @media (max-width: 768px) {
   .item-1.responsive-image {
     max-height: 150px;
+    max-width: 150px;
   }
 }
