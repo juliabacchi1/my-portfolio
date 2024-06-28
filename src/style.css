@@ -516,9 +516,6 @@ a.button-contact {
     margin-left: 5px;
   }
 
-  .graduation {
-    margin: 5px;
-  }
   .graduation-title,
   .project-title,
   .title-about-me {
@@ -537,10 +534,6 @@ a.button-contact {
 
   .certificate img {
     width: 90px;
-  }
-
-  .project-items {
-    margin: 5px;
   }
 
   img.item-1 {
