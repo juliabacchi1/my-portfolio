@@ -518,21 +518,22 @@ a.button-contact {
   .graduation,
   .container-projects,
   .container-about-me {
-    margin: 0;
+    margin: 20px;
   }
 
   .graduation-title,
   .project-title,
   .title-about-me {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .graduation-types,
   .text-about-me {
-    font-size: 16px;
+    font-size: 23px;
   }
 
-  .competences {
+  .competences,
+  .certificates-container {
     gap: 10px;
   }
 
@@ -541,21 +542,12 @@ a.button-contact {
     height: 25px;
   }
 
-  .certificates-container {
-    gap: 10px;
-  }
-
   .certificate img {
-    width: 100px;
-  }
-
-  .project-items {
-    display: flex;
-    margin: 30px 0;
+    width: 130px;
   }
 
   img.item-1 {
-    width: 200px;
+    max-width: 200px;
   }
 }
 
