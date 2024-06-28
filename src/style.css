@@ -513,6 +513,7 @@ a.button-contact {
   .section-content,
   .section-content-about {
     padding: 5px;
+    margin-left: 5px;
   }
 
   .graduation-title,
@@ -521,13 +522,18 @@ a.button-contact {
     font-size: 30px;
   }
 
+  .competences {
+    gap: 5px;
+    padding-top: 0;
+  }
+
   .competences img {
     width: 23px;
     height: 25px;
   }
 
   .certificate img {
-    width: 100px;
+    width: 90px;
   }
 
   img.item-1 {
