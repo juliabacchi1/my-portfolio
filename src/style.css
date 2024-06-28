@@ -278,7 +278,7 @@ img.item-1 {
   font-size: 14px;
 }
 
-/* Button */
+/* projects button */
 
 button.view-web {
   background-color: #ffffff;
@@ -304,16 +304,12 @@ button.view-web span {
   top: 50%;
   transform: translate(-50%, -50%);
   transition: transform 0.45s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  text-shadow: 0 50px currentColor, 0 -50px currentColor;
 }
 
 button.view-web.hovered span:first-of-type {
   transform: translate(-50%, calc(-50% - 50px));
   text-shadow: 0 50px currentColor, 0 -50px currentColor;
-}
-
-button.view-web.hovered span:nth-of-type(2) {
-  transform: translate(-50%, calc(-50% + 50px));
-  text-shadow: 0 -50px currentColor, 0 50px currentColor;
 }
 
 /* about me */
