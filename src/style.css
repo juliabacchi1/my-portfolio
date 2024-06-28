@@ -174,8 +174,7 @@ button.download-cv:hover:after {
 /*skills*/
 
 .graduation {
-  margin: 60px 215px 30px 215px;
-  padding-top: 30px;
+  margin: 60px;
   text-align: initial;
 }
 
@@ -183,10 +182,7 @@ button.download-cv:hover:after {
   font-size: 38px;
   font-weight: 600;
   margin: 0;
-}
-
-.graduation-types {
-  font-weight: 500;
+  padding: 10px 0;
 }
 
 a.shecodes {
@@ -211,12 +207,13 @@ a.shecodes {
 
 .certificates-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   column-gap: 20px;
+  row-gap: 20px;
 }
 
 .certificate img {
-  max-width: 100%;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 230px;
@@ -229,156 +226,94 @@ a.shecodes {
 /* projects */
 
 .container-projects {
-  display: flex;
-  padding: 130px 152px;
+  margin: 60px;
 }
 
-.apresentation-projects {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 20px 50px;
-}
-
-.title-project {
+.project-title {
   font-size: 38px;
   font-weight: 600;
   text-align: center;
-}
-
-.project-cards {
-  display: flex;
-  justify-content: center; /* Centraliza os cards horizontalmente */
-  margin: 0 auto;
-  flex-wrap: wrap; /* Permite que os cards quebrem linha em telas menores */
-}
-
-.cards {
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-  padding: 10px;
-  background: #ffffff;
-  border: 1.44px solid #f1f1f1;
-  border-radius: 20px;
-  box-shadow: 5px 8px 9px -7px rgba(0, 0, 0, 0.1);
-  margin: 30px;
-}
-
-.project-image-general {
-  width: 70%; /* Garante que a imagem ocupe a largura completa do container */
-  height: 110px; /* Define uma altura fixa para as imagens */
-  object-fit: contain; /* Garante que a imagem cubra o container mantendo a proporção */
-  padding: 10px;
-}
-
-.project-image1 {
-  animation: spin 60s linear infinite;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg); /* Início da animação: sem rotação */
-  }
-  to {
-    transform: rotate(
-      360deg
-    ); /* Fim da animação: rotação completa de 360 graus */
-  }
-}
-
-.project-image-2 {
-  animation: swing 5s ease-in-out infinite;
-}
-
-@keyframes swing {
-  0%,
-  100% {
-    transform: rotate(0deg); /* Estado inicial e final: sem rotação */
-  }
-  50% {
-    transform: rotate(10deg); /* Meio da animação: rotação de 10 graus */
-  }
-}
-
-.frame {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.title-frame {
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 5px;
-}
-
-.text-frame {
-  opacity: 0.5;
-  font-weight: 400;
-  font-size: 12px;
-  margin-bottom: 10px;
-}
-
-hr.hr-frame {
-  width: 70%; /* Garante que a linha horizontal ocupe toda a largura disponível */
-  align-self: center;
-  margin: 5px 0; /* Define margem superior e inferior para espaçamento */
-  border: none; /* Remove a borda padrão do <hr> */
-  border-top: 1px solid #ccc; /* Adiciona uma linha horizontal com cor cinza */
-  opacity: 0.3;
-}
-
-.card-contain {
-  display: flex;
-  justify-content: center; /* Alinha os ícones ao centro */
-  gap: 5px; /* Adiciona espaçamento entre os ícones */
+  margin: 0;
   padding: 10px 0;
-  margin-bottom: 13px;
 }
 
-.icon-contain {
-  width: 17px;
-  height: 17px;
-}
-
-.view-web,
-.view-github {
-  color: #272727;
-  padding: 10px 10px;
-  cursor: pointer;
-  transition: opacity 0.3s ease-in-out;
-  position: relative;
-  display: inline-block;
-  border-radius: 60px;
-  box-shadow: 0 30px 50px rgba(55, 50, 68, 0.08);
-  border: none;
-  background: #f7f7f7;
-  margin: 0 auto;
-}
-
-.view-web:hover,
-.view-github:hover {
-  background: #272727;
-  color: #f7f7f7;
-  box-shadow: 0 30px 50px rgba(55, 50, 68, 0.08);
-}
-
-.custom-icon {
-  font-size: 14px;
-  padding-inline-end: 2px;
-}
-
-.fa-globe {
-  font-size: 14px;
-  padding-inline-end: 2px;
-}
-
-.buttons-view {
+.project-items {
   display: flex;
-  justify-content: center;
-  gap: 5px;
+  margin: 30px 0;
+}
+
+.item-image {
+  padding: 10px;
+  margin: 30px 0;
+}
+
+img.item-1 {
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 5px 10px 13px -6px rgba(0, 0, 0, 0.1);
+  border: 1.44px solid #f1f1f1;
+}
+
+.item-description {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.item-title {
+  font-size: 28px;
+  font-weight: 600;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.item-text {
+  font-size: 16px;
+  padding: 0 20px;
+}
+
+.item-type {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Button */
+
+button.view-web {
+  background-color: #ffffff;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #222222;
+  display: inline-block;
+  margin: 20px auto;
+  overflow: hidden;
+  padding: 14px 16px;
+  position: relative;
+  transition: background-color 0.3s, padding 0.5s;
+  width: 120px;
+  height: 40px;
+}
+
+button.view-web span {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.45s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+button.view-web.hovered span:first-of-type {
+  transform: translate(-50%, calc(-50% - 50px));
+  text-shadow: 0 50px currentColor, 0 -50px currentColor;
+}
+
+button.view-web.hovered span:nth-of-type(2) {
+  transform: translate(-50%, calc(-50% + 50px));
+  text-shadow: 0 -50px currentColor, 0 50px currentColor;
 }
 
 /* about me */
@@ -479,121 +414,4 @@ p.flag {
 .city {
   padding-bottom: 5px;
   font-weight: 600;
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-  .menu-container {
-    position: static;
-    text-align: center;
-  }
-
-  .horizontal-menu {
-    flex-direction: column;
-    gap: 5px;
-    font-size: 16px;
-  }
-
-  .my-info {
-    padding: 100px 20px 10px 20px;
-  }
-
-  .title {
-    font-size: 22px;
-  }
-
-  .subtitle {
-    font-size: 48px;
-  }
-
-  .resume {
-    font-size: 14px;
-  }
-
-  .certificates-container {
-    flex-direction: column;
-  }
-
-  .graduation {
-    margin: 20px;
-  }
-
-  .project-cards {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .cards {
-    width: 100%;
-  }
-
-  .container-about {
-    margin: 20px;
-  }
-
-  .title-about {
-    font-size: 28px;
-  }
-
-  .text-about {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  .menu-container {
-    position: static;
-    text-align: center;
-  }
-
-  .horizontal-menu {
-    flex-direction: column;
-    gap: 8px;
-    font-size: 14px;
-  }
-
-  .my-info {
-    padding: 80px 15px 10px 15px;
-  }
-
-  .title {
-    font-size: 20px;
-  }
-
-  .subtitle {
-    font-size: 36px;
-  }
-
-  .resume {
-    font-size: 12px;
-  }
-
-  .certificates-container {
-    flex-direction: column;
-  }
-
-  .graduation {
-    margin: 15px;
-  }
-
-  .project-cards {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .cards {
-    width: 100%;
-  }
-
-  .container-about {
-    margin: 15px;
-  }
-
-  .title-about {
-    font-size: 24px;
-  }
-
-  .text-about {
-    font-size: 14px;
-  }
 }

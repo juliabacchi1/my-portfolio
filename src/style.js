@@ -12,21 +12,12 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-//alternar a visibilidade do hover card
+//rolagem do segundo botão
 
-document.addEventListener("DOMContentLoaded", function () {
-  const titleCard = document.getElementById("title-card");
-  const card = document.querySelector(".cards");
+document.querySelector(".view-web").addEventListener("mouseover", function () {
+  this.classList.add("hovered");
+});
 
-  titleCard.addEventListener("click", function (event) {
-    event.stopPropagation(); // Evita que o clique propague para o elemento pai
-    card.classList.toggle("show-back");
-  });
-
-  // Captura o clique na área do card para ocultar o card-back
-  card.addEventListener("click", function (event) {
-    if (!event.target.closest(".card-back")) {
-      card.classList.remove("show-back");
-    }
-  });
+document.querySelector(".view-web").addEventListener("mouseout", function () {
+  this.classList.remove("hovered");
 });
