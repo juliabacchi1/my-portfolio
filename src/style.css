@@ -506,7 +506,7 @@ a.button-contact {
 
 @media (max-width: 768px) {
   .horizontal-menu.men-pr {
-    gap: 10px;
+    gap: 7px;
   }
 
   .section-content-skills,
@@ -522,7 +522,8 @@ a.button-contact {
   }
 
   .graduation-title,
-  .project-title .title-about-me {
+  .project-title,
+  .title-about-me {
     font-size: 30px;
   }
 
