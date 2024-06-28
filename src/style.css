@@ -515,12 +515,6 @@ a.button-contact {
     padding: 5px;
   }
 
-  .graduation,
-  .container-projects,
-  .container-about-me {
-    margin: 50px;
-  }
-
   .graduation-title,
   .project-title,
   .title-about-me {
@@ -533,10 +527,29 @@ a.button-contact {
   }
 
   .certificate img {
-    width: 90px;
+    width: 100px;
   }
 
   img.item-1 {
     max-width: 200px;
+  }
+
+  .item-description {
+    display: block;
+    padding: 10px;
+  }
+
+  .item-title {
+    font-size: 25px;
+    padding: 10px;
+    margin-top: 5px;
+  }
+
+  .item-text {
+    font-size: 14px;
+  }
+
+  .item-type {
+    font-size: 12px;
   }
 }
