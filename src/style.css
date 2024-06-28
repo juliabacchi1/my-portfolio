@@ -520,6 +520,21 @@ a.button-contact {
 }
 
 @media (max-width: 768px) {
+  .graduation-types.gra-ty,
+  .text-about-me.tex-ab {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  .competences.co-ico {
+    max-height: 15px;
+    max-width: 15px;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
   .item-1.responsive-image {
     max-height: 200px;
     max-width: 200px;
