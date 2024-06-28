@@ -522,14 +522,14 @@ a.button-contact {
 @media (max-width: 768px) {
   .graduation-types.gra-ty,
   .text-about-me.tex-ab {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 
 @media (max-width: 768px) {
   .competences.co-ico {
-    max-height: 10px;
-    max-width: 10px;
+    max-height: 8px;
+    max-width: 8px;
     gap: 10px;
   }
 }
