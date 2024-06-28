@@ -509,16 +509,27 @@ a.button-contact {
     gap: 10px;
   }
 
-  .section-content-skills {
+  .section-content-skills,
+  .section-content,
+  .section-content-about {
     padding: 5px;
   }
 
-  .graduation-title {
-    font-size: 2rem;
+  .graduation,
+  .container-projects,
+  .container-about-me {
+    margin: 0;
   }
 
-  .graduation-types {
-    font-size: 1.6rem;
+  .graduation-title,
+  .project-title,
+  .title-about-me {
+    font-size: 20px;
+  }
+
+  .graduation-types,
+  .text-about-me {
+    font-size: 16px;
   }
 
   .competences {
