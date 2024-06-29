@@ -550,8 +550,12 @@ a.button-contact {
   }
 
   .project-items {
-    margin: 5px 0;
-    padding-left: 0;
+    margin: 0;
+    padding: 5px;
+  }
+
+  .responsive-image {
+    padding: 5px;
   }
 
   img.item-1 {
@@ -597,7 +601,7 @@ a.button-contact {
   }
 
   .details-photos {
-    padding: 5px;
+    margin: 0 auto;
   }
 
   .hobby-photos {
