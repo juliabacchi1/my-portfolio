@@ -585,6 +585,7 @@ a.button-contact {
 
   .details-general {
     display: block;
+    justify-content: center;
   }
 
   .text-description {
@@ -601,6 +602,5 @@ a.button-contact {
 
   .hobby-photos {
     max-height: 150px;
-    justify-content: center;
   }
 }
