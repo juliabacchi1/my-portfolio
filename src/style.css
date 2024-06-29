@@ -586,12 +586,17 @@ a.button-contact {
     display: block;
   }
 
+  .text-description {
+    font-size: 12px;
+  }
+
   .details-descriptions {
     padding: 5px;
   }
 
   .details-photos {
     padding: 5px;
+    justify-content: center;
   }
 
   .hobby-photos {
