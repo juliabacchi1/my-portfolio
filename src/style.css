@@ -536,6 +536,10 @@ a.button-contact {
     height: 25px;
   }
 
+  .certification {
+    padding: 5px;
+  }
+
   .certificates-container {
     gap: 10px;
   }
@@ -554,7 +558,7 @@ a.button-contact {
 
   .item-image {
     padding: 5px;
-    margin: 5px 0;
+    margin: 0;
   }
 
   .item-title {
