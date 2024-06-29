@@ -538,7 +538,7 @@ a.button-contact {
   }
 
   .certification {
-    padding: 5px;
+    padding: 8px;
   }
 
   .certificates-container {
@@ -580,7 +580,6 @@ a.button-contact {
 
   .details-descriptions {
     display: block;
-    flex-direction: column;
     padding: 5px;
   }
 
