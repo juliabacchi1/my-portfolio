@@ -559,11 +559,11 @@ a.button-contact {
 
   .item-image {
     padding: 5px;
-    margin: 0;
+    margin-top: 5px;
   }
 
   .item-title {
-    font-size: 25px;
+    font-size: 20px;
     justify-content: center;
     padding: 5px;
     margin-top: 0;
@@ -576,5 +576,15 @@ a.button-contact {
 
   .item-type {
     font-size: 12px;
+  }
+
+  .details-descriptions {
+    display: block;
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .hobby-photos {
+    max-height: 150px;
   }
 }
