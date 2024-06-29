@@ -520,6 +520,7 @@ a.button-contact {
   .project-title,
   .title-about-me {
     font-size: 30px;
+    margin-left: 5px;
   }
 
   .competences {
