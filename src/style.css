@@ -541,16 +541,15 @@ a.button-contact {
   }
 
   .certificate img {
-    width: 100px;
+    width: 110px;
   }
 
   .project-items {
-    display: block;
-    margin: 5px 0;
+    margin: 5px;
   }
 
   img.item-1 {
-    max-width: 200px;
+    max-width: 180px;
   }
 
   .item-title {
@@ -560,7 +559,7 @@ a.button-contact {
   }
 
   .item-text {
-    font-size: 14px;
+    visibility: hidden;
   }
 
   .item-type {
