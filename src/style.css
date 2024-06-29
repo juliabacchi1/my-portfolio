@@ -180,7 +180,7 @@ button.download-cv:hover:after {
   text-align: initial;
 }
 
-.. {
+.graduation-description {
   width: 85%;
 }
 
@@ -517,7 +517,7 @@ a.button-contact {
   }
 
   .graduation-description {
-    margin: 5px;
+    width: 50%;
   }
 
   .graduation-title,
