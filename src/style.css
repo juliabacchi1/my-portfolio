@@ -551,6 +551,7 @@ a.button-contact {
 
   .project-items {
     margin: 5px 0;
+    padding-left: 0;
   }
 
   img.item-1 {
@@ -587,7 +588,7 @@ a.button-contact {
   }
 
   .text-description {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .details-descriptions {
@@ -596,7 +597,7 @@ a.button-contact {
 
   .details-photos {
     padding: 5px;
-    justify-content: center;
+    align-content: center;
   }
 
   .hobby-photos {
