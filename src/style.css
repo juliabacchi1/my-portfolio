@@ -536,17 +536,21 @@ a.button-contact {
     height: 25px;
   }
 
+  .certificates-container {
+    gap: 10px;
+  }
+
   .certificate img {
-    width: 90px;
+    width: 100px;
+  }
+
+  .project-items {
+    display: block;
+    margin: 5px 0;
   }
 
   img.item-1 {
     max-width: 200px;
-  }
-
-  .item-description {
-    display: block;
-    padding: 10px;
   }
 
   .item-title {
