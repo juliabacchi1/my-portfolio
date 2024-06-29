@@ -538,7 +538,7 @@ a.button-contact {
   }
 
   .certification {
-    padding: 8px;
+    padding: 10px;
   }
 
   .certificates-container {
@@ -579,8 +579,11 @@ a.button-contact {
   }
 
   .details-descriptions {
-    display: block;
     padding: 5px;
+  }
+
+  .details-general {
+    display: block;
   }
 
   .hobby-photos {
