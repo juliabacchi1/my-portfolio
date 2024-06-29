@@ -597,10 +597,10 @@ a.button-contact {
 
   .details-photos {
     padding: 5px;
-    align-content: center;
   }
 
   .hobby-photos {
     max-height: 150px;
+    justify-content: center;
   }
 }
