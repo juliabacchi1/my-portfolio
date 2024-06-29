@@ -550,7 +550,7 @@ a.button-contact {
   }
 
   .project-items {
-    margin: 0;
+    margin: 5px 0;
   }
 
   img.item-1 {
@@ -578,12 +578,20 @@ a.button-contact {
     font-size: 12px;
   }
 
-  .details-descriptions {
-    padding: 5px;
+  .container-description-me {
+    margin: 5px;
   }
 
   .details-general {
     display: block;
+  }
+
+  .details-descriptions {
+    padding: 5px;
+  }
+
+  .details-photos {
+    padding: 5px;
   }
 
   .hobby-photos {
