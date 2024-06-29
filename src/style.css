@@ -516,9 +516,11 @@ a.button-contact {
     margin-left: 5px;
   }
 
-  .graduation-description {
-    width: 100%;
-  }
+.graduation {
+  display: flex;
+  margin: 65px;
+  text-align: initial;
+}
 
   .graduation-title,
   .project-title,
