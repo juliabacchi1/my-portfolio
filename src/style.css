@@ -517,7 +517,8 @@ a.button-contact {
   }
 
   .graduation-description {
-    width: 200px;
+    width: 50%;
+    padding-left: 5px;
   }
 
   .graduation-title,
