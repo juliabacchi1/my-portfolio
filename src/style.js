@@ -12,7 +12,41 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
+// Dados das competências
+
+const competences = [
+  {
+    src: "imgs/icon-html.png",
+    alt: "HTML",
+    class: "html-icon media-icon",
+  },
+  {
+    src: "imgs/icon-css.png",
+    alt: "CSS",
+    class: "css-icon media-icon",
+  },
+  {
+    src: "imgs/icon-js.png",
+    alt: "JavaScript",
+    class: "js-icon media-icon",
+  },
+  // Adicione mais competências conforme necessário
+];
+
+// Função para os elementos das competências
+const competencesContainer = document.getElementById("competences-container");
+
+competences.forEach((skill) => {
+  const skillImg = document.createElement("img");
+  skillImg.src = skill.src;
+  skillImg.alt = skill.alt;
+  skillImg.className = skill.class;
+
+  competencesContainer.appendChild(skillImg);
+});
+
 // Dados dos certificados
+
 const certificates = [
   {
     imageUrl: "imgs/Certificate Basics.png",
@@ -84,24 +118,70 @@ certificates.forEach((cert) => {
   certificatesContainer.appendChild(certificateElement);
 });
 
-// Rolagem do botão Project-1
+// Dados dos projetos
 
-document.querySelector(".view-web").addEventListener("mouseover", function () {
-  this.classList.add("hovered");
+const projects = [
+  {
+    title: "Weather App",
+    imgSrc: "imgs/Weather-app.png",
+    imgAlt: "weather-app",
+    description:
+      "Allows users to check the current weather conditions in different locations in the world. The app provides real-time information on temperature, humidity, wind speed, and weather forecasts for the coming days.",
+    techStack: "HTML, CSS, JavaScript, Weather API",
+    liveLink: "https://the-weather-app-jb.netlify.app/",
+    githubLink: "https://github.com/juliabacchi1/my-weather-app",
+    buttonClass: "view-web",
+  },
+  {
+    title: "World Clock",
+    imgSrc: "imgs/World-clock.png",
+    imgAlt: "world-clock",
+    description:
+      "Provides a straightforward way to track different time zones around the globe.",
+    techStack: "HTML, CSS, JavaScript, Dates and Time Zones API",
+    liveLink: "https://the-world-clock-jb.netlify.app",
+    githubLink: "https://github.com/juliabacchi1/world-clock",
+    buttonClass: "view-web-2",
+  },
+];
+
+// Função para os elementos de projeto
+
+const projectsContainer = document.getElementById("projects-container");
+
+projects.forEach((project) => {
+  const projectItem = document.createElement("div");
+  projectItem.className = "project-items";
+
+  projectItem.innerHTML = `
+    <div class="item-image">
+      <a href="${project.liveLink}" target="_blank">
+        <img src="${project.imgSrc}" alt="${project.imgAlt}" class="item-1 responsive-image" />
+      </a>
+    </div>
+    <div class="item-description">
+      <h2 class="item-title">${project.title}</h2>
+      <p class="item-text">${project.description}</p>
+      <p class="item-type">${project.techStack}</p>
+      <div class="item-button">
+        <a href="${project.githubLink}" target="_blank">
+          <button class="${project.buttonClass} button-23" role="button">
+            <span class="item-demo">GitHub</span>
+          </button>
+        </a>
+      </div>
+    </div>
+  `;
+
+  projectsContainer.appendChild(projectItem);
 });
 
-document.querySelector(".view-web").addEventListener("mouseout", function () {
-  this.classList.remove("hovered");
-});
-
-// Rolagem do botão Project-2
-
-document
-  .querySelector(".view-web-2")
-  .addEventListener("mouseover", function () {
+// Rolagem dos botões
+document.querySelectorAll(".view-web, .view-web-2").forEach((button) => {
+  button.addEventListener("mouseover", function () {
     this.classList.add("hovered");
   });
-
-document.querySelector(".view-web-2").addEventListener("mouseout", function () {
-  this.classList.remove("hovered");
+  button.addEventListener("mouseout", function () {
+    this.classList.remove("hovered");
+  });
 });
