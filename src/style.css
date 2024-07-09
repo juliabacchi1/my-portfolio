@@ -292,7 +292,7 @@ img.item-1:hover {
   font-size: 14px;
 }
 
-/* Project 1 button */
+/* Project button */
 
 button.view-web {
   background-color: #ffffff;
@@ -323,41 +323,6 @@ button.view-web span {
 }
 
 button.view-web.hovered span:first-of-type {
-  transform: translate(-50%, calc(-50% - 50px));
-  text-shadow: 0 50px currentColor, 0 -50px currentColor;
-}
-
-/* Project 2 button */
-
-button.view-web-2 {
-  background-color: #ffffff;
-  border: 1px solid #222222;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #222222;
-  display: inline-block;
-  margin: 20px auto;
-  overflow: hidden;
-  padding: 14px 16px;
-  position: relative;
-  transition: background-color 0.3s, padding 0.5s;
-  width: 120px;
-  height: 40px;
-  z-index: 900;
-}
-
-button.view-web-2 span {
-  display: block;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  transition: transform 0.45s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-  text-shadow: 0 50px currentColor, 0 -50px currentColor;
-}
-
-button.view-web-2.hovered span:first-of-type {
   transform: translate(-50%, calc(-50% - 50px));
   text-shadow: 0 50px currentColor, 0 -50px currentColor;
 }

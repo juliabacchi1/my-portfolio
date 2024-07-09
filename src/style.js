@@ -122,6 +122,17 @@ certificates.forEach((cert) => {
 
 const projects = [
   {
+    title: "Recipes Generator",
+    imgSrc: "imgs/Recipes-generator.png",
+    imgAlt: "recipes-generator",
+    description:
+      "Utilizes AI to generate personalized recipes based on user-inputted ingredients.",
+    techStack: "HTML, CSS, JavaScript, AI API",
+    liveLink: "https://recipes-generator-ai.netlify.app",
+    githubLink: "https://github.com/juliabacchi1/recipes-generator",
+    buttonClass: "view-web",
+  },
+  {
     title: "Weather App",
     imgSrc: "imgs/Weather-app.png",
     imgAlt: "weather-app",
@@ -141,7 +152,7 @@ const projects = [
     techStack: "HTML, CSS, JavaScript, Dates and Time Zones API",
     liveLink: "https://the-world-clock-jb.netlify.app",
     githubLink: "https://github.com/juliabacchi1/world-clock",
-    buttonClass: "view-web-2",
+    buttonClass: "view-web",
   },
 ];
 
@@ -177,7 +188,7 @@ projects.forEach((project) => {
 });
 
 // Rolagem dos botões
-document.querySelectorAll(".view-web, .view-web-2").forEach((button) => {
+document.querySelectorAll(".view-web").forEach((button) => {
   button.addEventListener("mouseover", function () {
     this.classList.add("hovered");
   });
