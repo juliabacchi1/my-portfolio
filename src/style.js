@@ -69,23 +69,23 @@ const certificates = [
     url: "https://www.shecodes.io/certificates/b96795c7273611609e63070dd0ba0d7d?_gl=1*1iizvm2*_gcl_au*MTE1Nzg3MTA2Ni4xNzE5MjMwNDU0",
   },
   {
+    imageUrl: "imgs/Certificate AI Add-on.png",
+    altText: "Certificado 5",
+    url: "https://www.shecodes.io/certificates/901bc2c68769648786a04148d4d45145?_gl=1*nupcai*_gcl_au*MTE1Nzg3MTA2Ni4xNzE5MjMwNDU0",
+  },
+  {
     imageUrl: "imgs/Certificate Plus Add-on.png",
-    altText: "Certificado 4",
+    altText: "Certificado 6",
     url: "https://www.shecodes.io/certificates/b96795c7273611609e63070dd0ba0d7d?_gl=1*1iizvm2*_gcl_au*MTE1Nzg3MTA2Ni4xNzE5MjMwNDU0",
   },
   {
     imageUrl: "imgs/Certificate Plus Add-on.png",
-    altText: "Certificado 4",
+    altText: "Certificado 7",
     url: "https://www.shecodes.io/certificates/b96795c7273611609e63070dd0ba0d7d?_gl=1*1iizvm2*_gcl_au*MTE1Nzg3MTA2Ni4xNzE5MjMwNDU0",
   },
   {
     imageUrl: "imgs/Certificate Plus Add-on.png",
-    altText: "Certificado 4",
-    url: "https://www.shecodes.io/certificates/b96795c7273611609e63070dd0ba0d7d?_gl=1*1iizvm2*_gcl_au*MTE1Nzg3MTA2Ni4xNzE5MjMwNDU0",
-  },
-  {
-    imageUrl: "imgs/Certificate Plus Add-on.png",
-    altText: "Certificado 4",
+    altText: "Certificado 8",
     url: "https://www.shecodes.io/certificates/b96795c7273611609e63070dd0ba0d7d?_gl=1*1iizvm2*_gcl_au*MTE1Nzg3MTA2Ni4xNzE5MjMwNDU0",
   },
 ];
