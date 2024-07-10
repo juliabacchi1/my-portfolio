@@ -127,7 +127,7 @@ const projects = [
     imgAlt: "recipes-generator",
     description:
       "Utilizes AI to generate personalized recipes based on user-inputted ingredients.",
-    techStack: "HTML, CSS, JavaScript, AI API",
+    techStack: "HTML, CSS, JavaScript, Artificial Intelligence",
     liveLink: "https://recipes-generator-ai.netlify.app",
     githubLink: "https://github.com/juliabacchi1/recipes-generator",
     buttonClass: "view-web",
