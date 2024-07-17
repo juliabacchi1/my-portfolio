@@ -510,6 +510,11 @@ a.button-contact {
     width: 130px;
   }
 
+  .container-about-me,
+  .container-projects {
+    margin: 50px 0 0;
+  }
+
   .project-items {
     margin: 0;
     padding: 5px;
@@ -554,10 +559,6 @@ a.button-contact {
 
   button.view-web {
     margin: 13px auto;
-  }
-
-  .container-about-me {
-    margin: 50px 0 0;
   }
 
   .container-description-me {
