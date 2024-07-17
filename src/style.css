@@ -556,12 +556,18 @@ a.button-contact {
     margin: 13px auto;
   }
 
+  .container-about-me {
+    margin: 50px 0 0;
+  }
+
   .container-description-me {
     margin: 10px;
   }
 
   .details-general {
     justify-content: center;
+    display: flex;
+    flex-direction: column;
   }
 
   .text-description {
@@ -573,8 +579,7 @@ a.button-contact {
   }
 
   .details-photos {
-    align-content: start;
-    margin: 35px 10px 0 10px;
+    margin: 0 auto;
   }
 
   .hobby-photos {
