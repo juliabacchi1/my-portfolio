@@ -506,10 +506,6 @@ a.button-contact {
     padding: 10px;
   }
 
-  .certificates-container {
-    gap: 10px;
-  }
-
   .certificate img {
     width: 130px;
   }
@@ -527,9 +523,14 @@ a.button-contact {
     max-width: 180px;
   }
 
-  .item-image {
+  .item-image,
+  .item-description {
     padding: 5px;
-    margin-top: 5px;
+    margin: 5px;
+  }
+
+  .item-description {
+    justify-content: center;
   }
 
   .item-title {
@@ -542,18 +543,24 @@ a.button-contact {
   .item-text {
     opacity: 0; /* Esconde no desktop. */
     height: 0;
+    margin: 0;
   }
 
   .item-type {
     font-size: 12px;
+    padding-bottom: 0;
+    margin: 0;
+  }
+
+  button.view-web {
+    margin: 13px auto;
   }
 
   .container-description-me {
-    margin: 5px;
+    margin: 10px;
   }
 
   .details-general {
-    display: block;
     justify-content: center;
   }
 
@@ -566,7 +573,8 @@ a.button-contact {
   }
 
   .details-photos {
-    margin: 0 auto;
+    align-content: start;
+    margin: 35px 10px 0 10px;
   }
 
   .hobby-photos {
