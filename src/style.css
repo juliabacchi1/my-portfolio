@@ -355,9 +355,9 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .horizontal-menu.men-pr {
+  /* .horizontal-menu.men-pr {
     gap: 7px;
-  }
+  } */
 
   .section-content-skills,
   .section-content,
