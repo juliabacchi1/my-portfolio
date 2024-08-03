@@ -329,144 +329,32 @@ button.view-web.hovered span:first-of-type {
 
 /* About me */
 
-.container-about-me {
-  margin: 0;
-}
-
-.title-about-me {
-  font-size: 38px;
-  font-weight: 600;
-  text-align: center;
-  padding: 10px 0;
-  margin: 0;
-}
-
 span.meet {
   color: #b36f2c;
 }
 
-.text-about-me {
-  font-weight: 500;
-  text-align: center;
+/* Blog */
+
+.body-blog {
+  margin-top: 90px;
 }
 
-.container-description-me {
-  margin: 50px 70px;
+.fw-bold {
+  font-weight: bold;
 }
 
-.details-general {
-  display: flex;
-  padding-bottom: 30px;
+.text-blog {
+  font-weight: bold;
 }
 
-.details-photos {
-  padding: 28px;
-  align-content: center;
+.article {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
-.details-descriptions {
-  display: flex;
-  flex-direction: column;
-  padding: 30px 115px 0 0;
-}
-
-.hobby-photos {
-  max-height: 230px;
-  border-radius: 50%;
-}
-
-.text-description {
-  font-size: 16px;
-  font-weight: 300;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-hr.hr-about {
-  width: 100%;
-  align-self: center;
-  margin: 5px 0;
-  border: none;
-  border-top: 1px solid #ccc;
-  opacity: 0.3;
-}
-
-.footer-description {
-  column-gap: 12px;
-  display: flex;
-  position: relative;
-}
-
-p.flag {
-  font-size: 30px;
-  margin: 10px 0;
-}
-
-.local {
-  font-size: 13px;
-  font-weight: 400;
-  margin: 10px 0;
-}
-.city,
-.country {
-  margin: 0;
-}
-
-.country {
-  opacity: 0.7;
-}
-
-.city {
-  padding-bottom: 5px;
-  font-weight: 600;
-}
-
-/* Contrate-me Button */
-
-.button-56 {
-  align-items: center;
-  background-color: #ffffff;
-  border: 2px solid #111;
-  border-radius: 8px;
-  box-sizing: border-box;
-  color: #111;
-  display: flex;
-  font-family: Inter, sans-serif;
-  height: 48px;
-  justify-content: center;
-  line-height: 24px;
-  max-width: 100%;
-  margin: 0 auto 100px;
-  padding: 0 20px;
-  position: relative;
-  text-align: center;
-}
-
-.button-56:after {
-  background-color: #111;
-  border-radius: 8px;
-  content: "";
-  display: block;
-  height: 48px;
-  left: 0;
-  width: 100%;
-  position: absolute;
-  top: -2px;
-  transform: translate(8px, 8px);
-  transition: transform 0.2s ease-out;
-  z-index: -1;
-}
-
-.button-56:hover:after {
-  transform: translate(0, 0);
-}
-
-.button-56:hover {
-  outline: 0;
-}
-
-a.button-contact {
-  text-decoration: none;
+footer {
+  padding-left: 40px;
 }
 
 @media (max-width: 768px) {
@@ -559,31 +447,5 @@ a.button-contact {
 
   button.view-web {
     margin: 13px auto;
-  }
-
-  .container-description-me {
-    margin: 10px;
-  }
-
-  .details-general {
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .text-description {
-    font-size: 14px;
-  }
-
-  .details-descriptions {
-    padding: 5px;
-  }
-
-  .details-photos {
-    margin: 0 auto;
-  }
-
-  .hobby-photos {
-    max-height: 150px;
   }
 }

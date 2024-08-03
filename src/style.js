@@ -196,3 +196,5 @@ document.querySelectorAll(".view-web").forEach((button) => {
     this.classList.remove("hovered");
   });
 });
+
+
