@@ -32,7 +32,6 @@ header {
 
 .menu-container {
   display: flex;
-  position: fixed;
   padding: 10px;
   width: 100%;
   text-align: center;
@@ -354,11 +353,13 @@ footer {
   padding-left: 40px;
 }
 
-@media (max-width: 768px) {
-  .horizontal-menu.men-pr {
-    gap: 4px;
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
-
+}
+@media (max-width: 768px) {
   .section-content-skills,
   .section-content,
   .section-content-about {

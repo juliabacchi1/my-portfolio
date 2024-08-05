@@ -33,7 +33,42 @@
   <body>
     <!-- HEADER -->
     <header>
-      <div class="menu-container" id="home">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid menu-container" id="home">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav horizontal-menu men-pr">
+              <li class="nav-item">
+                <a class="nav-link container pr-5 pl-5" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link container" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link container" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link container" href="#about-me">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link container" href="blog.html">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- <div class="menu-container" id="home">
         <ul class="horizontal-menu men-pr gap-4">
           <li><a href="#home" class="container">Home</a></li>
           <li><a href="#skills" class="container">Skills</a></li>
@@ -41,7 +76,7 @@
           <li><a href="#about-me" class="container">About me</a></li>
           <li><a href="blog.html" class="container">Blog</a></li>
         </ul>
-      </div>
+      </div> -->
 
       <div class="my-info">
         <div class="title">Hey there,</div>
