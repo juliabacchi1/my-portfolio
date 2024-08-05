@@ -172,7 +172,7 @@ projects.forEach((project) => {
     </div>
     <div class="item-description">
       <h2 class="item-title">${project.title}</h2>
-      <p class="item-text">${project.description}</p>
+      <p class="item-text d-none d-md-block">${project.description}</p>
       <p class="item-type">${project.techStack}</p>
       <div class="item-button">
         <a href="${project.githubLink}" target="_blank">
