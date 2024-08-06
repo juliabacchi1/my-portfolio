@@ -37,10 +37,10 @@ function displayArticles() {
                 </div>
             </div>
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 d-none d-md-block">
                     <img class="img-fluid rounded" src="${article.image}" alt="${article.title}">
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <p class="m-0">${article.content}</p>
                 </div>
             <div class="col-12">
