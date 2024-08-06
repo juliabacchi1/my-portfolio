@@ -410,8 +410,7 @@ footer {
     padding: 5px;
   }
 
-  img.item-1,
-  img.profile {
+  img.item-1 {
     max-width: 180px;
   }
 
@@ -438,14 +437,17 @@ footer {
     margin: 0;
   }
 
-  .description-profile {
-    padding: 1px;
-  }
-  .text-profile {
-    font-size: 13px;
+  .profile img {
+    max-width: 100%;
   }
 
-  button.view-web {
-    margin: 13px auto;
+  .description-profile {
+    padding: 0 !important;
+  }
+
+  .text-profile {
+    padding: 5px;
+    margin-top: 20px;
+    font-size: 13px;
   }
 }
