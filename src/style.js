@@ -122,6 +122,17 @@ certificates.forEach((cert) => {
 
 const projects = [
   {
+    title: "Responsive Portfolio Template",
+    imgSrc: "imgs/Portfolio-template.png",
+    imgAlt: "portfolio-template",
+    description:
+      "A customizable portfolio template designed for individuals to showcase their projects, skills, and experiences responsively.",
+    techStack: "HTML, CSS, Bootstrap",
+    liveLink: "https://fullyresponsive-portfolio.netlify.app",
+    githubLink: "https://github.com/juliabacchi1/responsive-portfolio",
+    buttonClass: "view-web",
+  },
+  {
     title: "Recipes Generator",
     imgSrc: "imgs/Recipes-generator.png",
     imgAlt: "recipes-generator",
