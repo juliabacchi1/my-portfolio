@@ -2,6 +2,8 @@
 
 Welcome to my personal portfolio! This website showcases my work, skills, and experiences as a front-end developer, with a focus on clean and responsive design.
 
+![Screenshot from Homepage's Personal Portfolio](./imgs/Portfolio.png)
+
 ## Features
 
 - **Responsive Design:** The portfolio is fully responsive, ensuring a great user experience on both desktop and mobile devices.
