@@ -127,7 +127,7 @@ const projects = [
     imgAlt: "portfolio-template",
     description:
       "A customizable portfolio template designed for individuals to showcase their projects, skills, and experiences responsively.",
-    techStack: "HTML, CSS, Bootstrap",
+    techStack: "HTML, CSS, JavaScript, Bootstrap",
     liveLink: "https://fullyresponsive-portfolio.netlify.app",
     githubLink: "https://github.com/juliabacchi1/responsive-portfolio",
     buttonClass: "view-web",
