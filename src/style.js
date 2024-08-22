@@ -30,6 +30,11 @@ const competences = [
     alt: "JavaScript",
     class: "js-icon media-icon",
   },
+  {
+    src: "imgs/icon-react.png",
+    alt: "React",
+    class: "react-icon media-icon",
+  },
   // Adicione mais competências conforme necessário
 ];
 
