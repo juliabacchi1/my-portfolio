@@ -79,9 +79,9 @@ const certificates = [
     url: "https://www.shecodes.io/certificates/67e0eddd194c9c3fddb3089f6077c1aa?_gl=1*1oyyri6*_gcl_au*MTE1Nzg3MTA2Ni4xNzE5MjMwNDU0",
   },
   {
-    imageUrl: "imgs/Certificate Plus Add-on.png",
+    imageUrl: "imgs/Certificate Responsive Add-on.png",
     altText: "Certificado 7",
-    url: "https://www.shecodes.io/certificates/b96795c7273611609e63070dd0ba0d7d?_gl=1*1iizvm2*_gcl_au*MTE1Nzg3MTA2Ni4xNzE5MjMwNDU0",
+    url: "https://www.shecodes.io/certificates/4e4ce86eb863258b8eae61cfbc5ae76a?_gl=1*y7r36g*_gcl_au*MTE1Nzg3MTA2Ni4xNzE5MjMwNDU0LjIwNTU5NDU5NzMuMTcyMzQyOTg3Ni4xNzIzNDI5ODc1",
   },
   {
     imageUrl: "imgs/Certificate Plus Add-on.png",
@@ -121,6 +121,17 @@ certificates.forEach((cert) => {
 // Dados dos projetos
 
 const projects = [
+  {
+    title: "Travel Showcase Project",
+    imgSrc: "imgs/Travel-showcase.png",
+    imgAlt: "travel-showcase",
+    description:
+      "An interactive website that highlights the amazing aspects of a destination. Designed with a responsive layout, it features seamless integration of external content.",
+    techStack: "HTML, CSS, JavaScript, Bootstrap",
+    liveLink: "https://fullyresponsive-destination.netlify.app",
+    githubLink: "https://github.com/juliabacchi1/travel-destination",
+    buttonClass: "view-web",
+  },
   {
     title: "Responsive Portfolio Template",
     imgSrc: "imgs/Portfolio-template.png",
