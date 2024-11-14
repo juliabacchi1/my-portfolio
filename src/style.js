@@ -89,9 +89,9 @@ const certificates = [
     url: "https://www.shecodes.io/certificates/4e4ce86eb863258b8eae61cfbc5ae76a?_gl=1*y7r36g*_gcl_au*MTE1Nzg3MTA2Ni4xNzE5MjMwNDU0LjIwNTU5NDU5NzMuMTcyMzQyOTg3Ni4xNzIzNDI5ODc1",
   },
   {
-    imageUrl: "imgs/Certificate Plus Add-on.png",
+    imageUrl: "imgs/Certificate React.png",
     altText: "Certificado 8",
-    url: "https://www.shecodes.io/certificates/b96795c7273611609e63070dd0ba0d7d?_gl=1*1iizvm2*_gcl_au*MTE1Nzg3MTA2Ni4xNzE5MjMwNDU0",
+    url: "https://www.shecodes.io/certificates/32cca132cccc818562a13d3f3a316856?_gl=1*igg9ra*_gcl_au*MTU4MTI4ODkuMTcyOTI1MjAyNw..",
   },
 ];
 
