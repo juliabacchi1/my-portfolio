@@ -93,6 +93,11 @@ const certificates = [
     altText: "Certificado 8",
     url: "https://www.shecodes.io/certificates/32cca132cccc818562a13d3f3a316856?_gl=1*igg9ra*_gcl_au*MTU4MTI4ODkuMTcyOTI1MjAyNw..",
   },
+  {
+    imageUrl: "imgs/Certificate Advanced React.png",
+    altText: "Certificado 9",
+    url: "https://www.shecodes.io/certificates/5c10d79c325c7d7c1710406081f9a2ba?_gl=1*1fc7df0*_gcl_au*MTAyNzc0MjE0MC4xNzMyOTEzMjUx",
+  },
 ];
 
 // Função para os elementos de certificado
@@ -127,12 +132,34 @@ certificates.forEach((cert) => {
 
 const projects = [
   {
+    title: "Dictionary App",
+    imgSrc: "imgs/Dictionary-App.png",
+    imgAlt: "dictionary-app",
+    description:
+      "A powerful dictionary app that provides detailed definitions and translations. It allows users to search for words and view their meanings, synonyms, and translations in real time.",
+    techStack: "React, JavaScript, APIs, CSS",
+    liveLink: "https://dictionary-app-search.netlify.app",
+    githubLink: "https://github.com/juliabacchi1/dictionary-app",
+    buttonClass: "view-web",
+  },
+  {
+    title: "Weather Search Engine",
+    imgSrc: "imgs/Weather-Search-Engine.png",
+    imgAlt: "weather-search-engine",
+    description:
+      "A weather search engine that allows users to search for current weather information for any city worldwide. Built with React and integrated with weather APIs for real-time data.",
+    techStack: "React, JavaScript, APIs, CSS",
+    liveLink: "https://temp-search-engine.netlify.app",
+    githubLink: "https://github.com/juliabacchi1/react-search-engine",
+    buttonClass: "view-web",
+  },
+  {
     title: "Travel Showcase Project",
     imgSrc: "imgs/Travel-showcase.png",
     imgAlt: "travel-showcase",
     description:
       "An interactive website that highlights the amazing aspects of a destination. Designed with a responsive layout, it features seamless integration of external content.",
-    techStack: "HTML, CSS, JavaScript, Bootstrap",
+    techStack: "JavaScript, CSS, Bootstrap",
     liveLink: "https://fullyresponsive-destination.netlify.app",
     githubLink: "https://github.com/juliabacchi1/travel-destination",
     buttonClass: "view-web",
@@ -143,7 +170,7 @@ const projects = [
     imgAlt: "portfolio-template",
     description:
       "A customizable portfolio template designed for individuals to showcase their projects, skills, and experiences responsively.",
-    techStack: "HTML, CSS, JavaScript, Bootstrap",
+    techStack: "JavaScript, CSS, Bootstrap",
     liveLink: "https://fullyresponsive-portfolio.netlify.app",
     githubLink: "https://github.com/juliabacchi1/responsive-portfolio",
     buttonClass: "view-web",
@@ -154,7 +181,7 @@ const projects = [
     imgAlt: "recipes-generator",
     description:
       "Utilizes AI to generate personalized recipes based on user-inputted ingredients.",
-    techStack: "HTML, CSS, JavaScript, Artificial Intelligence",
+    techStack: "JavaScript, CSS, API",
     liveLink: "https://recipes-generator-ai.netlify.app",
     githubLink: "https://github.com/juliabacchi1/recipes-generator",
     buttonClass: "view-web",
@@ -165,7 +192,7 @@ const projects = [
     imgAlt: "weather-app",
     description:
       "Allows users to check the current weather conditions in different locations in the world. The app provides real-time information on temperature, humidity, wind speed, and weather forecasts for the coming days.",
-    techStack: "HTML, CSS, JavaScript, Weather API",
+    techStack: "JavaScript, CSS, API",
     liveLink: "https://the-weather-app-jb.netlify.app/",
     githubLink: "https://github.com/juliabacchi1/my-weather-app",
     buttonClass: "view-web",
@@ -176,7 +203,7 @@ const projects = [
     imgAlt: "world-clock",
     description:
       "Provides a straightforward way to track different time zones around the globe.",
-    techStack: "HTML, CSS, JavaScript, Dates and Time Zones API",
+    techStack: "JavaScript, CSS, API",
     liveLink: "https://the-world-clock-jb.netlify.app",
     githubLink: "https://github.com/juliabacchi1/world-clock",
     buttonClass: "view-web",
