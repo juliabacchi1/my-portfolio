@@ -187,17 +187,6 @@ const projects = [
     buttonClass: "view-web",
   },
   {
-    title: "Weather App",
-    imgSrc: "imgs/Weather-app.png",
-    imgAlt: "weather-app",
-    description:
-      "Allows users to check the current weather conditions in different locations in the world. The app provides real-time information on temperature, humidity, wind speed, and weather forecasts for the coming days.",
-    techStack: "JavaScript, CSS, API",
-    liveLink: "https://the-weather-app-jb.netlify.app/",
-    githubLink: "https://github.com/juliabacchi1/my-weather-app",
-    buttonClass: "view-web",
-  },
-  {
     title: "World Clock",
     imgSrc: "imgs/World-clock.png",
     imgAlt: "world-clock",
