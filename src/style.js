@@ -186,17 +186,6 @@ const projects = [
     githubLink: "https://github.com/juliabacchi1/recipes-generator",
     buttonClass: "view-web",
   },
-  {
-    title: "World Clock",
-    imgSrc: "imgs/World-clock.png",
-    imgAlt: "world-clock",
-    description:
-      "Provides a straightforward way to track different time zones around the globe.",
-    techStack: "JavaScript, CSS, API",
-    liveLink: "https://the-world-clock-jb.netlify.app",
-    githubLink: "https://github.com/juliabacchi1/world-clock",
-    buttonClass: "view-web",
-  },
 ];
 
 // Função para os elementos de projeto
