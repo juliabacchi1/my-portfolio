@@ -332,6 +332,11 @@ span.meet {
   color: #b36f2c;
 }
 
+.text-body-secondary {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
 /* Blog */
 
 .body-blog {
